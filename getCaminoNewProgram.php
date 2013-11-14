@@ -2132,7 +2132,7 @@ function generaMapa(camino)
 		
 
 		// COMPOSER
-		//renderer.autoClear = false;
+		renderer.autoClear = false;
 
 		renderTargetParameters = { minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, format: THREE.RGBFormat, stencilBuffer: false };
 		//renderTarget = new THREE.WebGLRenderTarget( SCREEN_WIDTH, SCREEN_HEIGHT, renderTargetParameters );
@@ -2146,7 +2146,16 @@ function generaMapa(camino)
 
 		composer = new THREE.EffectComposer( renderer, renderTarget );
 		var renderModel = new THREE.RenderPass( scene, camera );
+
+		//var effectFXAA = new THREE.ShaderPass( THREE.FXAAShader );
+		//effectFXAA.uniforms['resolution'].value.set(1/SCREEN_WIDTH,1/SCREEN_HEIGHT);
 		//effectFXAA.renderToScreen = true;
+
+		effectFXAA = new THREE.ShaderPass( THREE.ShaderExtras[ "fxaa" ] );
+		//effectFXAA.uniforms[ 'resolution' ].value.set( 1 / SCREEN_WIDTH, 1 / SCREEN_HEIGHT );
+		effectFXAA.uniforms[ 'resolution' ].value.set( 1 / 900, 1 / 900 );
+		effectFXAA.renderToScreen = true;
+
 		//effectVignette.renderToScreen = true;
 		//vblur.renderToScreen = true;
 		//colorCorrection.renderToScreen = true;
@@ -2155,7 +2164,7 @@ function generaMapa(camino)
 
 		composer = new THREE.EffectComposer( renderer, renderTarget );
 		composer.addPass( renderModel );
-		//composer.addPass( effectFXAA );
+		composer.addPass( effectFXAA );
 		
 		//composer.addPass( hblur );
 		//composer.addPass( vblur );
@@ -2781,9 +2790,9 @@ function generaMapa(camino)
 
 
 
-			renderer.render( scene, camera );
+			//renderer.render( scene, camera );
 			//renderer.autoUpdateObjects = true;
-			//composer.render( 0.1 );
+			composer.render( 0.1 );
 
 		}
 		
