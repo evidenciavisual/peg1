@@ -1,0 +1,201 @@
+4,Adidas
+5,Afex
+6,Afrodita
+9,Amchi
+13,Andrea Rosseti
+15,AOC
+19,Arnette
+26,Avent
+27,Azaleia
+29,Banco de Chile
+31,Banco Falabella
+36,Bariloche
+37,Bata
+40,BB2
+42,BCI
+47,BH
+48,Biblioteca Viva
+51,Biocure
+52,Black
+57,Borghi
+58,Boutique Mex
+59,Bravíssimo
+60,Bresler
+62,Britax
+63,Brooks
+65,Bruno Rossi
+66,Bubble Gummers
+67,Bufalo Beef
+68,Buffet Express
+69,Bulova
+70,Burger King
+71,Cacharel
+73,Caffarena
+75,Calvin Klein
+76,Cangaroos
+77,Cannon
+78,Capellini
+81,Carry
+85,Casio
+86,Cat
+89,Chanel
+92,Chery
+93,Chevrolet
+94,Chic
+95,Chicco
+97,Chinawok
+100,Cinemark
+102,Cluny
+103,CMR
+104,Colgate
+105,Colloky
+106,Columbia
+108,Converse
+112,Credichile
+113,Cushe
+117,Davison
+118,De Togni
+122,Disean
+123,Disney
+125,Do It
+127,Doggis
+129,Domino
+130,Dunkin Donut'S
+132,DYG
+134,Ellus
+143,Europa
+157,Ficcus
+159,Fila
+164,Ford
+165,Forum
+166,Fossil
+167,Foster
+170,Fritz
+177,GMO
+179,Gotta
+183,Guante
+184,Gucci
+185,Hafei
+188,Happyland
+190,Head
+191,Hering
+197,HP
+200,Hush Puppies
+202,Hyundai
+203,IPhone
+207,Infanti
+208,Integramedica
+209,Intime
+211,Isdin
+215,Jansport
+216,JJO
+218,Jordan
+219,Joyas Barón
+220,Juan Maestro
+222,Kayser
+223,Kentucky Friend Chicken
+224,Kerastase
+225,Kia Carens
+226,Kia Morning
+227,Kia Rio 3
+228,Kia Rio 4
+229,Kia Rio 5
+230,Konica
+234,La Roche Posa
+236,Laboratorio Chile
+237,Lady Ventury
+243,Lg
+245,Limonada
+248,Loreal
+255,Marquis
+259,Maui & Sons
+263,Mc Donald'S
+264,Medipharm
+265,Merrel
+269,Mininas
+274,Monarch
+275,Monix
+276,Montini
+288,Nero
+290,New Era
+294,Nike
+295,Ninbus
+300,Nokia
+301,North Star
+307,Opticas Schilling
+313,Panasonic
+314,Pandora
+319,Patuelli
+320,Pcfactory
+321,Pedro Juan & Diego
+322,Pepe Jeans
+325,Phillips
+326,Pigeon
+327,Pillin
+336,Pollini
+337,Poseidon
+339,Power
+340,Pre-Unic
+344,Puma
+345,Ralph
+348,Reebook
+350,Regatta
+352,Rip Curl
+354,Rockford
+356,Rotter & Krauss
+358,Rusty
+360,Salfa
+361,Samsonite
+362,Samsung
+366,Sara
+367,Savory
+368,Saxoline
+369,Schop Dog
+373,Sencillito
+375,Skechers
+377,Sony
+392,Tarjeta Salco
+394,Tatienne
+396,Telepizza
+399,Timer
+400,Tobacco Store
+401,Todo Piel
+402,Todomoda
+406,Toscani
+407,Toshiba
+409,Toyota
+414,Tronwell
+416,Umbro
+418,Vans
+419,Via Marte
+421,Vitamin Life
+424,Volcom
+428,Wados
+432,Xtrem
+435,Yogen Fruz
+440,Abismo
+447,Ansonia
+456,La Polar
+461,Bottero
+472,Chia
+475,Citroen
+482,Haby
+483,Fergie
+484,Crew
+488,Daily One Gold
+491,Nextel
+492,Troglodita
+494,Alegretto
+495,Bob's
+496,Cinemundo
+497,Corporación Cultural Estación Central
+498,Inside
+499,La Kabina
+502,Emerica
+514,Frutos
+518,Golden Chile
+538,La Araucana
+595,Secure
+612,Termofat
+618,Triline
+624,Vestal

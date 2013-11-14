@@ -1,0 +1,172 @@
+1,LAN,LanChile.jpg
+2,Banco Credichile,Credichile.jpg
+3,Farmacias Cruz Verde,CruzVerde.jpg
+4,Banco Falabella,BancoFalabella.jpg
+5,Ripley,Ripley.jpg
+6,Falabella,Falabella.jpg
+7,La Polar,LaPolar.jpg
+8,Doce Treinta y Cuatro,1234.jpg
+9,Cannon,Cannon.jpg
+10,Monarch,Monarch.jpg
+11,Saxoline,Saxoline.jpg
+12,Belsport,Belsport.jpg
+13,Kayser,Kayser.jpg
+14,Block,Block.jpg
+15,Vacancy 41,null.jpg
+16,Todo Piel,TodoPiel.jpg
+17,Ferracini,Ferracini.jpg
+18,Gotta,Gotta.jpg
+19,Bata,Bata.jpg
+20,De Togni,DeTong.jpg
+21,Pre-Unic,preunic.jpg
+22,Vacancy 1,null.jpg
+23,Limonada,limonada.jpg
+24,Funsport,FunSport.jpg
+25,Caffarena,Caffarena.jpg
+26,Gema,gema.jpg
+27,Capellini,Capellini.jpg
+28,Pillin,Pillin.jpg
+29,JJO,JJO.jpg
+30,Vacancy 3,null.jpg
+31,Vacancy 4,null.jpg
+32,Ripley,Ripley.jpg
+33,Falabella,Falabella.jpg
+34,La Polar,LaPolar.jpg
+35,Johnson`s,Johnson`s.jpg
+36,Vacancy 5,null.jpg
+37,Vacancy 6,null.jpg
+38,Joyeria Baron,JoyeriaBaron.jpg
+39,Ficcus,Ficcus.jpg
+40,Bottero,Bottero.jpg
+41,Monix,Monix.jpg
+42,Abismo,Abismo.jpg
+43,Baby Infanti,BabyInfanti.jpg
+44,Buble Gummers,BubleGummers.jpg
+45,Bruno Rossi,brunorossi.jpg
+46,Doit,Doit.jpg
+47,Opticas GMO,GMO.jpg
+48,Ansonia,Ansonia.jpg
+49,D- House,D-House.jpg
+50,Azaleia,Azaleia.jpg
+51,Yogen Fruz,YogenFruz.jpg
+52,Foster,Foster.jpg
+53,Vacancy 40,null.jpg
+54,Guante,Guante.jpg
+55,Gacel,Gacel.jpg
+56,Boumex,Boumex.jpg
+57,Vacancy 38,null.jpg
+58,Vacancy 39,null.jpg
+59,Todo Moda,TodoModa.jpg
+60,Intime,Intime.jpg
+61,Baby Center,BabyCenter.jpg
+62,Colloky,Colloky.jpg
+63,Disworld,Disworld.jpg
+64,Bresler,Bresler.jpg
+65,Vacancy 7,Vacancy7.jpg
+66,Ripley,Ripley.jpg
+67,Falabella,Falabella.jpg
+68,La Polar,LaPolar.jpg
+69,Johnson`s,Johnson`s.jpg
+70,Vacancy 8,Vacancy8.jpg
+71,Vacancy 9,Vacancy9.jpg
+72,Vacancy 10,Vacancy10.jpg
+73,Vacancy 11,Vacancy11.jpg
+74,Vacancy 12,Vacancy12.jpg
+75,Battery Street,BatteryStreet.jpg
+76,Pimp`s,Pimp`s.jpg
+77,Adrenalin,Adrenalin.jpg
+78,Head,Head.jpg
+79,Patuelli,Patuelli.jpg
+80,Puma,Puma.jpg
+81,Adidas,Adidas.jpg
+82,Pc Factory,PcFactory.jpg
+83,Dunkin Donuts,DunkinDonuts.jpg
+84,Vacancy 37,null.jpg
+85,100% Futbol,100%Futbol.jpg
+86,Vacancy 36,null.jpg
+87,Vacancy 35,null.jpg
+88,Inside,Inside.jpg
+89,Umbro,Umbro.jpg
+90,Rip Curl,RipCurl.jpg
+91,Maui & Sons,Maui.jpg
+92,Vacancy 13,null.jpg
+93,HP,HP.jpg
+94,Savory,Savory.jpg
+95,Cinemundo,Cines.jpg
+96,Happyland,Happyland.jpg
+97,Buffet Express,Buffet.jpg
+98,Telepizza,Telepizza.jpg
+99,Tarragona,PollosTarragona.jpg
+100,Vacancy 14,null.jpg
+101,Pedro Juan & Diego,pedrojuanydiego.jpg
+102,Troglodita,Troglodita.jpg
+103,Fruto´s,Frutos.jpg
+104,Juan Maestro,JuanMaestro.jpg
+105,Vacancy 34,null.jpg
+106,China Wok,ChinaWok.jpg
+107,Kentucky Fried Chicken,KFC.jpg
+108,Vacancy 15,null.jpg
+109,Shop Dog,ShopDog.jpg
+110,Vacancy 16,null.jpg
+111,Vacancy 17,null.jpg
+112,Vacancy 18,null.jpg
+113,Corporación Cultural Estación Central,UniversidaddeSantiago.jpg
+114,Johnson`s,Johnson`s.jpg
+115,Vacancy 19,null.jpg
+116,Banco de Chile,BancoChile.jpg
+117,Yogen Fruz,YogenFruz.jpg
+118,Biblioteca Viva,BibliotecaViva.jpg
+119,Domino,Domino.jpg
+120,Bariloche,Bariloche.jpg
+121,Doggis,Doggis.jpg
+122,Burger King,BurgerKing.jpg
+123,Buffalo Beef,BuffaloBeef.jpg
+124,Savory,Savory.jpg
+125,Fritz,Fritz.jpg
+126,Toyota,toyota.jpg
+127,Hyundai,Hyundai.jpg
+128,Vacancy 22,null.jpg
+129,CMR Automotriz,CMR.jpg
+130,Chery,Chery.jpg
+131,Vacancy 33,null.jpg
+132,KIA,KIA.jpg
+133,BCI Autos,BCI.jpg
+134,Chevrolet,Chevrolet.jpg
+135,Ford Center,FordCenter.jpg
+136,Farmacias Cruz Verde,CruzVerde.jpg
+137,Vacancy 20,null.jpg
+138,Vacancy 21,null.jpg
+139,Vacancy 32,null.jpg
+140,Servipag,servipag.jpg
+142,Vacancy 24,null.jpg
+144,Afex,Afex.jpg
+145,Nextel,Nextel.jpg
+146,Tobacco Store,Tobacco.jpg
+147,La Kabina,LaKabina.jpg
+148,Golden Chile,GoldenChile.jpg
+149,Vacancy 42,null.jpg
+150,Araucana,Araucana.jpg
+151,Farmacias Salcobrand,Salcobrand.jpg
+152,Bob`s,Bob`s.jpg
+153,Vacancy 25,null.jpg
+154,Vacancy 26,null.jpg
+155,La Araucana,Araucana.jpg
+157,Trowell,tronwell.jpg
+158,Opticas Rotter & Krauss,Rotter&Krauss.jpg
+159,Lisos & Rizos,Lisos&Rizos.jpg
+160,Vacancy 27,null.jpg
+161,Vacancy 28,null.jpg
+162,Vacancy 29,null.jpg
+163,Vacancy 30,null.jpg
+165,Claro,claro.jpg
+169,Vacancy 31,null.jpg
+170,Dunkin Donut's,donnuts.jpg
+171,Doggis,Doggis.jpg
+172,Bravissimo,Bravissimo.jpg
+174,Opticas Schilling,OP.Shilling.jpg
+175,Konica,Konica.jpg
+176,Vacancy 23,null.jpg
+177,Banco BCI,bci.jpg
+178,Integramédica,integramedica.jpg
+179,Alegretto,alegretto.jpg
+180,Mc Donald's,mcdonalds.jpg

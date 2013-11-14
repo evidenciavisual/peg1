@@ -1,0 +1,223 @@
+1,3D,NULL,NULL
+2,Accesorios,NULL,NULL
+4,Accesorios Computación,NULL,NULL
+18,Almuerzo,NULL,NULL
+22,Anillos,NULL,NULL
+23,Anteojos,NULL,NULL
+25,Aros,NULL,NULL
+26,Aros, Anillos, Pulseras, Collares,NULL,NULL
+28,Arrollados,NULL,NULL
+30,Articulos Hogar,NULL,NULL
+33,Automóviles,NULL,NULL
+37,Balones,NULL,NULL
+38,Barquillos,NULL,NULL
+43,Bebidas,NULL,NULL
+45,Billeteras,NULL,NULL
+49,Bolsos,NULL,NULL
+50,Bolsos De Cuero,NULL,NULL
+51,Botas,NULL,NULL
+52,Botines,NULL,NULL
+54,Boxer,NULL,NULL
+56,Burritos,NULL,NULL
+57,Buzos,NULL,NULL
+58,Cable,NULL,NULL
+60,Café,NULL,NULL
+62,Calcetas,NULL,NULL
+63,Calcetines,NULL,NULL
+64,Calzado De Fiesta,NULL,NULL
+65,Calzado De Vestir,NULL,NULL
+67,Calzado Descanso,NULL,NULL
+69,Calzado Fiesta,NULL,NULL
+70,Calzado Formal,NULL,NULL
+71,Calzado Informal,NULL,NULL
+72,Calzado Mujer,NULL,NULL
+76,Calzado Tipo Zapatillas,NULL,NULL
+77,Calzados,NULL,NULL
+79,Calzones,NULL,NULL
+80,Camaras,NULL,NULL
+82,Camionetas,NULL,NULL
+83,Camisas,NULL,NULL
+86,Camisetas,NULL,NULL
+88,Candados,NULL,NULL
+90,Carne Mongoliana,NULL,NULL
+93,Carteras,NULL,NULL
+98,Celulares,NULL,NULL
+101,Cervezas,NULL,NULL
+103,Chalecos,NULL,NULL
+104,Chapsui De Pollo,NULL,NULL
+106,Chaquetas,NULL,NULL
+108,Churrascos,NULL,NULL
+110,Cigarrillos,NULL,NULL
+112,Cinturones,NULL,NULL
+113,Coches,NULL,NULL
+114,Cojines,NULL,NULL
+115,Collares,NULL,NULL
+118,Completos,NULL,NULL
+120,Compra Y Venta Moneda Internacional,NULL,NULL
+121,Computadores,NULL,NULL
+122,Confites,NULL,NULL
+127,Copas Helado,NULL,NULL
+130,Cordones,NULL,NULL
+135,Crédito Convencional,NULL,NULL
+136,Créditos,NULL,NULL
+137,Cremas,NULL,NULL
+141,Cuentas Corrientes,NULL,NULL
+142,Cuentas De Ahorro,NULL,NULL
+143,Cuentas Vista,NULL,NULL
+144,Cuentos,NULL,NULL
+146,Cuidado Personal,NULL,NULL
+147,Cunas,NULL,NULL
+148,Cursos De Aleman,NULL,NULL
+149,Cursos De Frances,NULL,NULL
+150,Cursos De Ingles,NULL,NULL
+151,Cursos De Italiano,NULL,NULL
+152,Cursos De Portugues,NULL,NULL
+154,Deporte,NULL,NULL
+156,Detergente,NULL,NULL
+157,Diccionarios,NULL,NULL
+160,Donuts And Late,NULL,NULL
+162,Electrodomesticos,NULL,NULL
+163,Electronica,NULL,NULL
+164,Empanadas,NULL,NULL
+165,Encendedores,NULL,NULL
+166,Enciclopedia,NULL,NULL
+168,Ensaladas,NULL,NULL
+171,Esculturas,NULL,NULL
+176,Faldas,NULL,NULL
+178,Fichas Juego,NULL,NULL
+182,Formatos Digitales,NULL,NULL
+187,Gafas,NULL,NULL
+195,Gorros,NULL,NULL
+197,Guantes,NULL,NULL
+199,Hamburguesas,NULL,NULL
+200,Hawaianas,NULL,NULL
+201,Heladeria,NULL,NULL
+202,Helados,NULL,NULL
+205,Impresiones Fotograficas,NULL,NULL
+206,Impresoras,NULL,NULL
+208,Insumos,NULL,NULL
+209,Internet,NULL,NULL
+211,Internet Portatil,NULL,NULL
+215,Jeans,NULL,NULL
+220,Juegos Infantiles,NULL,NULL
+221,Jugos,NULL,NULL
+222,Jugos Naturales,NULL,NULL
+224,Juguetes,NULL,NULL
+228,Lapiceria,NULL,NULL
+233,Leche,NULL,NULL
+235,Lentes,NULL,NULL
+236,Lentes De Sol,NULL,NULL
+237,Lentes Opticos,NULL,NULL
+239,Libros Entretenimiento,NULL,NULL
+240,Linea Blanca,NULL,NULL
+241,Literatura General,NULL,NULL
+243,Lociones,NULL,NULL
+245,Maletas,NULL,NULL
+247,Manicure,NULL,NULL
+249,Marcos,NULL,NULL
+252,Mecedoras,NULL,NULL
+254,Medias,NULL,NULL
+255,Medias Luna,NULL,NULL
+256,Medicamentos,NULL,NULL
+262,Menaje,NULL,NULL
+264,Mochilas,NULL,NULL
+265,Modem Internet,NULL,NULL
+267,Muebles,NULL,NULL
+272,Notebook,NULL,NULL
+275,Ositos,NULL,NULL
+276,Pago de Cuentas,NULL,NULL
+277,Pago Isp,NULL,NULL
+279,Pantaletas,NULL,NULL
+280,Pantalones,NULL,NULL
+281,Pantalones De Trekking,NULL,NULL
+283,Pantys,NULL,NULL
+284,Pañales,NULL,NULL
+285,Pañales De Tela,NULL,NULL
+286,Pañuelos,NULL,NULL
+287,Papas Fritas,NULL,NULL
+290,Parrilladas,NULL,NULL
+294,Pasteles,NULL,NULL
+295,Pastelería,NULL,NULL
+297,Peliculas 35 mm,NULL,NULL
+298,Peluches,NULL,NULL
+299,Peluquería,NULL,NULL
+300,Pendientes,NULL,NULL
+302,Perfumes,NULL,NULL
+307,Pijamas,NULL,NULL
+310,Pinches,NULL,NULL
+312,Pizzas,NULL,NULL
+314,Plantillas,NULL,NULL
+316,Platos Preparados,NULL,NULL
+317,Plumones,NULL,NULL
+318,Poleras,NULL,NULL
+319,Poleras Deportivas,NULL,NULL
+321,Polerones,NULL,NULL
+323,Pollo Frito,NULL,NULL
+324,Postres,NULL,NULL
+325,Premios,NULL,NULL
+326,Prendedores,NULL,NULL
+327,Prestamo De Libros E Internet,NULL,NULL
+329,Productos Ligth,NULL,NULL
+330,Productos Maternales,NULL,NULL
+336,Pulseras,NULL,NULL
+339,Recargas Celular,NULL,NULL
+343,Reductoras,NULL,NULL
+347,Relojes,NULL,NULL
+351,Retiro Y Cobro De Cheques,NULL,NULL
+352,Ropa Cama,NULL,NULL
+354,Ropa Infantil,NULL,NULL
+356,Sabanas,NULL,NULL
+358,Salchipapas,NULL,NULL
+359,Sandalias,NULL,NULL
+360,Sandwichs,NULL,NULL
+361,Sandwicheria,NULL,NULL
+363,Seguros,NULL,NULL
+366,Servicios de salud,NULL,NULL
+367,Shampoo,NULL,NULL
+368,Shorts,NULL,NULL
+369,Sillas De Comer,NULL,NULL
+370,Sillas Para Auto,NULL,NULL
+372,Skate,NULL,NULL
+374,Snack,NULL,NULL
+378,Sombrillas,NULL,NULL
+379,Sostenes Calzones,NULL,NULL
+380,Sostenes,NULL,NULL
+387,Tablas,NULL,NULL
+388,Tablas De Surf,NULL,NULL
+393,Telefonia,NULL,NULL
+394,Telefonìa Fija,NULL,NULL
+395,Telefonia Movil,NULL,NULL
+398,Toallas,NULL,NULL
+402,Tragos,NULL,NULL
+404,Trajes de baño,NULL,NULL
+405,Trajes De Surf,NULL,NULL
+409,Urbano,NULL,NULL
+411,Vehículos Nuevos,NULL,NULL
+413,Vestidos,NULL,NULL
+416,Vestuario,NULL,NULL
+417,Vestuario Deportivo,NULL,NULL
+418,Vestuario femenino,NULL,NULL
+419,Vestuario General,NULL,NULL
+421,Vestuario masculino,NULL,NULL
+423,Vitaminas,NULL,NULL
+425,Voleros,NULL,NULL
+426,Wantan,NULL,NULL
+427,Zapatillas,NULL,NULL
+429,Zapatillas Deportivas,NULL,NULL
+430,Zapatillas Niñas,NULL,NULL
+431,Zapatillas Niño,NULL,NULL
+432,Zapatillas Primeros Pasos,NULL,NULL
+433,Zapatillas Running,NULL,NULL
+436,Zapatos,NULL,NULL
+438,Calzados De Vestir,NULL,NULL
+441,Calzados Futbol,NULL,NULL
+444,Tablas Skate,NULL,NULL
+445,Transferencias,NULL,NULL
+448,Centro de Llamados,NULL,NULL
+449,Fotocopias,NULL,NULL
+450,Juegos de Azar,NULL,NULL
+471,Compra y Venta De Oro,NULL,NULL
+494,Pinturas,NULL,NULL
+496,Arte,NULL,NULL
+497,Esmalte,NULL,NULL
+498,Ropa De Nieve,NULL,NULL

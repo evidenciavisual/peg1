@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+    <meta charset="UTF-8" /> 
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jquery Library 1.7.1 -->
+	<script src="src/js/jquery-1.7.1.min.js"></script>
+    <!-- Jquery Mobile 1.1.0 -->
+	<script src="src/js/jquery.mobile/jquery.mobile.custom.min.js"></script>
+    <link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.structure.css" />
+    <link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
+    <!-- iScroll 4.0 -->
+    <script type="text/javascript" src="src/js/iscroll/iscroll.js"></script>
+    <!-- Fancybox -->    
+    <script src="src/js/fancybox/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="src/css/fancybox/jquery.fancybox.css" /> 
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="src/css/base/estilo.base.css" />
+    <script type="text/JavaScript">
+	var timeout;
+	document.onmousemove = function(){
+  	clearTimeout(timeout);
+  	timeout = setTimeout(function(){top.location.href='protector.html'}, 360000);
+	}
+	</script>  
+</head> 
+
+<body> 
+<div data-role="page" id="inicio" class="mall-inicio-bg">
+      
+	<div data-role="content">
+        <script>
+
+    /*---- ESTADISTICAS GLOBALES------*/
+        $('#inicio').bind('pageshow',function(event, ui){
+            var ur = "inicio";
+            // ur=ur.split("/");
+            // ur=ur[4].split(".");
+            // ur=ur[0];
+           // alert(ur);
+           $.get("addEstadistica.php", { nomPag: ur } );
+        });
+        /*---- ESTADISTICAS GLOBALES------*/
+   
+    </script>
+    <div class="boton-tiendas">
+     <p><a href="busquedaTiendas.php" rel="external">Busca tu tienda...</a></p>
+    </div>
+    
+    <div class="iconos-barra-bg">
+    <ul class="icono">
+    <!--<li class="promo"><a href="#" data-transition="slide">Promociones</a></li>-->
+    <li class="entretencion"><a href="eventos.php" data-transition="slide">Eventos</a></li>     
+    <li class="cine"><a href="cine.php" data-transition="slide">Cine</a></li>
+    <li class="rubrosmall"><a href="rubros.html" rel="external">Tiendas de Servicio</a></li>
+	    <li class="promo"><a href="descuentos.php" data-transition="slide">Descuentos</a></li>
+    </ul>
+    </div>
+    
+    <div class="iconos-barra-bg">
+    <ul class="icono">
+    <li class="servicios"><a href="servicios-mapa-nivel01.html" data-transition="slide">Servicios Básicos</a></li>
+    <li class="accesos"><a href="accesos-mapa-nivel01.html" data-transition="slide">Accesos</a></li>
+    <li class="totem"><a href="como-usar.html" data-transition="slide">¿Cómo usar?</a></li>
+    </ul>
+    </div>
+        
+    <div class="iconos-barra-empty-bg">
+    <!-- <ul class="icono"> -->
+    <!-- <li><a href="#"></a></li> -->
+    <!-- <li class="totem"><a href="como-usar.html" data-transition="slide">¿Cómo usar?</a></li> -->
+    <!-- <li></li> -->
+    <!--<li class="horarios"><a href="horarios.html" data-transition="slide">Horarios</a></li>-->
+    <!-- </ul> -->
+    </div>
+    
+    <div class="iconos-barra-bottom-bg">
+    <ul class="icono icono-bottom">
+	<li class="facebook"><a href="facebook.html" rel="external">Redes Sociales</a></li>
+	<li class="ayuda"><a href="ayuda.html" data-transition="slide">Ayuda</a></li>     
+	<!--<li class="emergencia"><a href="emergencias.html" data-transition="slide">Emergencias</a></li>-->           
+    <!--<li class="ayuda"><a href="ayuda.html" data-transition="slide">Ayuda</a></li>-->
+    <li class="horarios"><a href="horarios.html" rel="external" data-transition="slide">Horarios</a></li>
+    <!--<li class="contacto"><a href="busquedaSugerencias.php" rel="external">Sugerencias</a></li>-->
+    </ul>
+    </div>
+	</div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>

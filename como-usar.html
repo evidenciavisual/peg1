@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+    <meta charset="UTF-8" />
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head> 
+
+<body> 
+<div data-role="page" id="como-usar" class="mall-inicio-bg">
+  <script>
+    $(document).ready(function() {
+    /*---- ESTADISTICAS POR PAGINA------*/
+                    var ur =  'como-usar';
+                    //ur=ur.split("/");
+                    //ur=ur[4].split(".");
+                    
+                    $.get("addEstadistica.php", { nomPag: ur } );
+                    /*---- ESTADISTICAS POR PAGINA------*/
+                });
+    </script>
+<div data-role="content">
+    <div class="titulos">
+        <div class="volver-btn">
+            <span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span>
+        </div>
+        <div class="titulo-txt">
+            <h1>¿Cómo usar?</h1>
+        </div>
+    </div>
+    
+    
+<div class="contenedor-busqueda">
+<div class="bg-paginas">
+<div style="text-align:center;"><img src="src/img/ayuda.jpg"></div>  
+</div>
+</div>
+    
+</div><!-- /contenedor-busqueda -->
+
+<div class="volver-bottom">
+<div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+</div>
+
+</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+@font-face { font-family: 'GothamRounded-Medium'; src: url('../../fonts/sgothamrnd-medium.eot'); src: url('../../fonts/gothamrnd-medium.eot?#iefix') format('embedded-opentype'), url('../../fonts/gothamrnd-medium.woff') format('woff'),url('../../fonts/gothamrnd-medium.ttf') format('truetype'), url('../../fonts/gothamrnd-medium.svg#gothamrnd-medium') format('svg');font-weight: normal; font-style: normal;}
+@font-face {font-family: 'LovitzRegular'; src: url('../../fonts/lovitz__-webfont.eot'); src: url('../../fonts/lovitz__-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/lovitz__-webfont.woff') format('woff'), url('../../fonts/lovitz__-webfont.ttf') format('truetype'), url('../../fonts/lovitz__-webfont.svg#LovitzRegular') format('svg'); font-weight: normal;  font-style: normal;} 
+
+/* ------------------------------------------ Reset -------------------------------------------- */
+* { outline: 0; }
+*:focus {outline: none;} 
+html, body { min-height: 100%;  }
+body, ul, ol, dl { margin: 0; padding:0; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; 
+-ms-user-select: none; user-select: none; background:'#FFF'}
+
+/* ------------------------------------------ Iframe -------------------------------------------- */
+div.iframe-container { width:900px; height:1100px; background:#FFF; overflow:hidden; -webkit-border-radius: 6px 4px 27px 27px; -moz-border-radius: 6px 4px 29px 29px; border-radius: 6px 4px 29px 29px; overflow:hidden}
+
+/* ------------------------------------------ TITULO TIENDA -------------------------------------------- */
+div.titulo-iframe { padding:0; min-height:120px; width:100%; margin:0; display:block; clear:both; overflow:auto; font-family: 'GothamRounded-Medium', Arial, Helvetica, sans-serif; background: #FFF; -webkit-border-radius: 6px 4px 0px 0px; -moz-border-radius: 6px 4px 0px 0px; border-radius: 6px 4px 0px 0px;}
+div.titulo-iframe img { float:left; width:120px; height:100px; border:#FFF 1px solid; -webkit-border-radius: 5px; border-radius: 5px; box-shadow:  0px 0px 1px 2px rgba(192, 192, 192, 0.2); margin:10px 0 0 10px; padding:0; }
+div.titulo-iframe div.nombre-tienda { width:500px; background:none; float:left; margin:0 0 0 20px;}
+
+div.titulo-iframe p.texto-lista, div.titulo-iframe p.texto-lista a { font-size: 35px; overflow: hidden; font-weight:normal; text-shadow: 0px 0px 5px #c2c2c2; filter: dropshadow(color=#c2c2c2, offx=0, offy=0); display:block!important; padding:0; margin:11px 0 0 0; clear:both; color:#6c6c6c; text-decoration:none}
+div.titulo-iframe p.subtexto-lista {/* white-space: nowrap; */ font-size: 18px; overflow: hidden; color:#6c6c6c; font-weight:normal; display:inline!important; padding:0; margin:0; clear:both;}
+
+/* ------------------------------------------ TITULO CONTENIDO -------------------------------------------- */
+h1.titulo-mapa { clear:both; font-family: 'GothamRounded-Medium', Arial, Helvetica, sans-serif; font-size:39px; text-align:center; text-decoration:none; font-weight:normal; border-top:#f2f2f2 1px solid; padding:5px 0 0 0; margin:0; color:#D10F26; background: #FFF;}
+div.mapa-webgl { width:900px; height:900px; background:#fff;overflow:hidden; padding:0; margin:0;}
+
+
+div.cine-info-left {width:240px; height:860px; background:#FFF; overflow:hidden; padding:25px 15px 15px 15px; margin:0; float:left; text-align:left}
+div.cine-info-left img {text-align:center!important; -webkit-border-radius: 7px; border-radius: 7px;}
+div.cine-info-right {width:610px; height:860px; background:#FFF; overflow:hidden; padding:25px 15px 15px 5px; margin:0; float:right}
+div.cine-info-right h1 { font-family: 'GothamRounded-Medium', Arial, Helvetica, sans-serif; font-weight:normal; font-size:26px; color:#666}
+
+div.cine-info-right p, div.cine-info-left p { font-family: 'GothamRounded-Medium', Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; color:#666}
+
+#dvLoading {
+/*background:url(../../img/fancybox/fancybox_loading.gif) no-repeat center center;*/
+background:url(../../img/espera.png) no-repeat center center;
+/*height: 140px;
+width: 140px;*/
+height: 403px;
+width: 403px;
+position: fixed;
+left: 50%;
+top: 50%;
+margin: -185px 0 0 -185px;
+z-index: 1000;
+}​
+
+/* ------------------------------------------ Desaparecer Cursor -------------------------------------------- */
+html, a, body {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
+a, input, label {cursor: none!important;}

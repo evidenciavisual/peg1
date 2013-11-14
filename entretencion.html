@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+    <meta charset="UTF-8" />
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head> 
+
+<body> 
+<div data-role="page" id="entretencion" class="mall-inicio-bg">
+
+    <script type="text/javascript">
+	$('#entretencion').bind('pageshow',function(event, ui){
+	var myScroll = new iScroll('wrapper-h');
+	/*---- ESTADISTICAS POR PAGINA------*/
+					var ur = window.location.href;
+					ur=ur.split("/");
+					ur=ur[4].split(".");
+					//alert(ur[0]);
+					ur=ur[0];
+					$.get("addEstadistica.php", { nomPag: ur } );
+					/*---- ESTADISTICAS POR PAGINA------*/	
+	});
+	</script>
+
+	<div data-role="content">
+    <div class="titulos">
+    <div class="volver-btn"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    <div class="titulo-txt"><h1>Entretención</h1></div>
+    </div>
+    
+<div class="bg-paginas-carrusel">
+<div id="wrapper-h">
+	<div id="scroller-h">
+		<ul id="thelist-h">
+            <li><img src="src/img/carrusel/1.jpg" width="600" height="841">
+            <!--span><a href="#" class="boton-carrusel fancybox.iframe" onclick="cargaPagina('40','28');"data-ajax="false"><p>¿Cómo Llegar?</p></a></span--></li>
+			<!--<li><img src="src/img/carrusel/2.jpg" width="600" height="841">
+            <span><a href="#" class="boton-carrusel fancybox.iframe" onclick="cargaPagina('40','28');" data-ajax="false"><p>¿Cómo Llegar?</p></a></span></li>-->
+			<li><img src="src/img/carrusel/4.jpg" width="600" height="841">
+            <!--span><a href="#" class="boton-carrusel fancybox.iframe" onclick="cargaPagina('40','28');" data-ajax="false"><p>¿Cómo Llegar?</p></a></span--></li>
+            <li><img src="src/img/carrusel/5.jpg" width="600" height="841">
+            <!--span><a href="#" class="boton-carrusel fancybox.iframe" onclick="cargaPagina('40','28');" data-ajax="false"><p>¿Cómo Llegar?</p></a></span--></li>
+<!--             <li><img src="src/img/carrusel/3.jpg" width="600" height="841">
+            span><a href="#" class="boton-carrusel fancybox.iframe" onclick="cargaPagina('40','28');" data-ajax="false"><p>¿Cómo Llegar?</p></a></span></li> -->
+        </ul>
+	</div>
+	<script> 
+	function cargaPagina(ubicacion,idTienda)
+	{
+		$.fancybox({
+			type		: "iframe",
+			fitToView	: true,
+			width		: 900,
+			height		: 1100,
+			padding 	: 40,
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'fade',
+			closeEffect	: 'elastic',
+			openSpeed	: 'normal',
+			helpers 	: { overlay : {opacity: 0.5, css : {'background-color' : '#440007'} } },
+		
+			href:"getCaminoMasCorto.php?inicio=263&meta="+ubicacion+"&idTienda="+idTienda+""
+		});
+	}
+	</script>       
+    
+</div>
+</div>
+
+    <div class="volver-bottom">
+    <div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    </div>
+
+</div>
+</div>
+</div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>

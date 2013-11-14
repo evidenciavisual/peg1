@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+    <meta charset="UTF-8" />
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jquery Library 1.7.1 -->
+	<script src="src/js/jquery-1.7.1.min.js"></script>
+    <!-- Jquery Mobile 1.1.0 -->
+	<script src="src/js/jquery.mobile/jquery.mobile.custom.min.js"></script>
+	<link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
+    <link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.structure.css" />
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="src/css/base/estilo.base.css" />
+    
+   	<script>
+	$(document).ready(function() {
+         /*---- ESTADISTICAS POR PAGINA------*/
+        var ur = window.location.href;
+        ur=ur.split("/");
+        ur=ur[4].split(".");
+        ur=ur[0];
+        $.get("addEstadistica.php", { nomPag: ur } );
+        /*---- ESTADISTICAS POR PAGINA------*/	
+		$(".efecto-pagina").css("display", "none");
+		$('.efecto-pagina').fadeIn(800);	
+	});
+	</script>
+	
+	<script type="text/JavaScript">
+	var timeout;
+	document.onmousemove = function(){
+  	clearTimeout(timeout);
+  	timeout = setTimeout(function(){top.location.href='protector.html'}, 360000);
+	}
+	</script> 
+    </head> 
+
+<body>
+<div data-role="page" id="felicitacion" class="mall-inicio-bg">
+
+	<div data-role="content">
+    <div class="titulos">
+    <div class="volver-btn"><span><a href="inicio.html" rel="external"></a></span></div>
+    <div class="titulo-txt">
+    <h1>Ayuda</h1>
+    </div>
+    </div>
+    
+	<div class="contenedor-busqueda efecto-pagina">
+	<div class="bg-busquedas bg-busquedas-large-padding">
+    <h1 class="titulos-ayuda">Mensaje Enviado!</h1>
+    <br/>
+    <!--<h1 class="titulos-ayuda">Tu opinión es importante para nosotros, daremos respuesta a la brevedad a tus requerimientos y enviaremos tu número de registro.</h1>-->
+    <p style="text-align:center;"><img src="src/img/mensaje-facebook.jpg"></p> 
+    <p style="text-align:center;"><a href="inicio.html" data-transition="slide" data-direction="reverse"><input type="submit" class="boton-enviar-correo" value="Volver a Inicio" /></a></p> 
+	</div>
+	</div>
+</div><!-- /contenedor-busqueda -->
+
+    <div class="volver-bottom">
+    <div class="volver-btn-bottom"><span><a href="inicio.html" rel="external"></a></span></div>
+    </div>
+
+</div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>

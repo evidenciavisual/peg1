@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+    <meta charset="UTF-8" />
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head> 
+
+<body>
+<div data-role="page" id="ayuda" class="mall-inicio-bg">
+<script>
+    $(document).ready(function() {
+    /*---- ESTADISTICAS POR PAGINA------*/
+                    var ur = 'ayuda';
+                    // ur=ur.split("/");
+                    // ur=ur[4].split(".");
+                    
+                    $.get("addEstadistica.php", { nomPag: ur } );
+                    /*---- ESTADISTICAS POR PAGINA------*/
+                });
+    </script>
+ 	<div data-role="content">
+    <div class="titulos">
+    <div class="volver-btn"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    <div class="titulo-txt">
+    <h1>Ayuda</h1>
+    </div>
+    </div>
+    
+	<div class="contenedor-busqueda">
+		<div class="bg-busquedas bg-busquedas-large">
+				<ul class="paginas-botones">
+                <li><a></a></li>
+                <li><a href="consultas.html" rel="external"><img src="src/img/ayuda-consultas.jpg" width="256" height="200"></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+               	<li><a href="idea.html" rel="external"><img src="src/img/ayuda-ideas.jpg" width="256" height="200"></a></li>
+                <li><a></a></li>
+                <li><a></a></li>                        		
+                <li><a href="sugerencias.html" rel="external"><img src="src/img/ayuda-sugerencias.jpg" width="256" height="200"></a></li>        
+                <li><a></a></li>
+                <li><a></a></li>                
+                <li><a href="felicitacion.html" rel="external"><img src="src/img/ayuda-felicitacion.jpg" width="256" height="200"></a></li>
+				</ul> 
+		</div>
+	</div>
+</div><!-- /contenedor-busqueda -->
+
+    <div class="volver-bottom">
+    <div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    </div>
+
+</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>

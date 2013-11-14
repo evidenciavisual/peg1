@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jquery Library 1.7.1 -->
+	<script src="src/js/jquery-1.7.1.min.js"></script>    
+    <!-- Responsive Slides -->
+    <link rel="stylesheet" href="src/css/slides/responsiveslides.css" /> 
+    <script type="text/javascript" src="src/js/slides/responsiveslides.min.js"></script>  
+    <script type="text/JavaScript">
+    	var timeout;
+    	document.onmousemove = function(){
+      	clearTimeout(timeout);
+      	timeout = setTimeout(function(){top.location.href='protector.html'}, 360000);
+    	}
+  	</script>    
+    <!-- Estilo Base --> 
+    <link rel="stylesheet" href="src/css/base/estilo.base.index.css" /> 
+    </head>
+
+<body oncontextmenu="return false;">
+  <script>
+    $(function () {
+		  $("#footer-slide").responsiveSlides({
+			maxwidth: 1080,
+			speed: 1250
+		  });
+    });
+  </script>
+  	
+<header><a href="protector.html" rel="external"><img src="src/img/header.jpg" width="1080" height="250"></a></header>
+
+<section>
+<iframe src="inicio.html" marginwidth="0px" marginheight="0px" frameborder="0" scrolling="no" width="1080px" height="1420px"></iframe>
+</section>
+
+<footer>
+    <!-- Slideshow Footer -->
+    <ul class="rslides" id="footer-slide">
+      <li><img src="src/img/footer3.jpg" width="1080" height="250"></li>
+      <li><img src="src/img/footer5.jpg" width="1080" height="250"></li>
+      <li><img src="src/img/footer9.jpg" width="1080" height="250"></li>
+    </ul>
+</footer>
+</body>
+</html>

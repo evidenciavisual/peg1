@@ -1,0 +1,223 @@
+1,3D
+2,Accesorios
+4,Accesorios Computación
+18,Almuerzo
+22,Anillos
+23,Anteojos
+25,Aros
+26,Aros, Anillos, Pulseras, Collares
+28,Arrollados
+30,Articulos Hogar
+33,Automóviles
+37,Balones
+38,Barquillos
+43,Bebidas
+45,Billeteras
+49,Bolsos
+50,Bolsos De Cuero
+51,Botas
+52,Botines
+54,Boxer
+56,Burritos
+57,Buzos
+58,Cable
+60,Café
+62,Calcetas
+63,Calcetines
+64,Calzado De Fiesta
+65,Calzado De Vestir
+67,Calzado Descanso
+69,Calzado Fiesta
+70,Calzado Formal
+71,Calzado Informal
+72,Calzado Mujer
+76,Calzado Tipo Zapatillas
+77,Calzados
+79,Calzones
+80,Camaras
+82,Camionetas
+83,Camisas
+86,Camisetas
+88,Candados
+90,Carne Mongoliana
+93,Carteras
+98,Celulares
+101,Cervezas
+103,Chalecos
+104,Chapsui De Pollo
+106,Chaquetas
+108,Churrascos
+110,Cigarrillos
+112,Cinturones
+113,Coches
+114,Cojines
+115,Collares
+118,Completos
+120,Compra Y Venta Moneda Internacional
+121,Computadores
+122,Confites
+127,Copas Helado
+130,Cordones
+135,Crédito Convencional
+136,Créditos
+137,Cremas
+141,Cuentas Corrientes
+142,Cuentas De Ahorro
+143,Cuentas Vista
+144,Cuentos
+146,Cuidado Personal
+147,Cunas
+148,Cursos De Aleman
+149,Cursos De Frances
+150,Cursos De Ingles
+151,Cursos De Italiano
+152,Cursos De Portugues
+154,Deporte
+156,Detergente
+157,Diccionarios
+160,Donuts And Late
+162,Electrodomesticos
+163,Electronica
+164,Empanadas
+165,Encendedores
+166,Enciclopedia
+168,Ensaladas
+171,Esculturas
+176,Faldas
+178,Fichas Juego
+182,Formatos Digitales
+187,Gafas
+195,Gorros
+197,Guantes
+199,Hamburguesas
+200,Hawaianas
+201,Heladeria
+202,Helados
+205,Impresiones Fotograficas
+206,Impresoras
+208,Insumos
+209,Internet
+211,Internet Portatil
+215,Jeans
+220,Juegos Infantiles
+221,Jugos
+222,Jugos Naturales
+224,Juguetes
+228,Lapiceria
+233,Leche
+235,Lentes
+236,Lentes De Sol
+237,Lentes Opticos
+239,Libros Entretenimiento
+240,Linea Blanca
+241,Literatura General
+243,Lociones
+245,Maletas
+247,Manicure
+249,Marcos
+252,Mecedoras
+254,Medias
+255,Medias Luna
+256,Medicamentos
+262,Menaje
+264,Mochilas
+265,Modem Internet
+267,Muebles
+272,Notebook
+275,Ositos
+276,Pago de Cuentas
+277,Pago Isp
+279,Pantaletas
+280,Pantalones
+281,Pantalones De Trekking
+283,Pantys
+284,Pañales
+285,Pañales De Tela
+286,Pañuelos
+287,Papas Fritas
+290,Parrilladas
+294,Pasteles
+295,Pastelería
+297,Peliculas 35 mm
+298,Peluches
+299,Peluquería
+300,Pendientes
+302,Perfumes
+307,Pijamas
+310,Pinches
+312,Pizzas
+314,Plantillas
+316,Platos Preparados
+317,Plumones
+318,Poleras
+319,Poleras Deportivas
+321,Polerones
+323,Pollo Frito
+324,Postres
+325,Premios
+326,Prendedores
+327,Prestamo De Libros E Internet
+329,Productos Ligth
+330,Productos Maternales
+336,Pulseras
+339,Recargas Celular
+343,Reductoras
+347,Relojes
+351,Retiro Y Cobro De Cheques
+352,Ropa Cama
+354,Ropa Infantil
+356,Sabanas
+358,Salchipapas
+359,Sandalias
+360,Sandwichs
+361,Sandwicheria
+363,Seguros
+366,Servicios de salud
+367,Shampoo
+368,Shorts
+369,Sillas De Comer
+370,Sillas Para Auto
+372,Skate
+374,Snack
+378,Sombrillas
+379,Sostenes Calzones
+380,Sostenes
+387,Tablas
+388,Tablas De Surf
+393,Telefonia
+394,Telefonìa Fija
+395,Telefonia Movil
+398,Toallas
+402,Tragos
+404,Trajes de baño
+405,Trajes De Surf
+409,Urbano
+411,Vehículos Nuevos
+413,Vestidos
+416,Vestuario
+417,Vestuario Deportivo
+418,Vestuario femenino
+419,Vestuario General
+421,Vestuario masculino
+423,Vitaminas
+425,Voleros
+426,Wantan
+427,Zapatillas
+429,Zapatillas Deportivas
+430,Zapatillas Niñas
+431,Zapatillas Niño
+432,Zapatillas Primeros Pasos
+433,Zapatillas Running
+436,Zapatos
+438,Calzados De Vestir
+441,Calzados Futbol
+444,Tablas Skate
+445,Transferencias
+448,Centro de Llamados
+449,Fotocopias
+450,Juegos de Azar
+471,Compra y Venta De Oro
+494,Pinturas
+496,Arte
+497,Esmalte
+498,Ropa De Nieve

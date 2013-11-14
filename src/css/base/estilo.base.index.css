@@ -1,0 +1,6 @@
+html {background:#92091a!important;}
+* {-moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
+body { background:#92091a!important; margin:0; padding:0; font-weight:normal;}
+header, footer, a { height:250px!important; margin:0!important; padding:0!important; /*background:#FFF;*/ border:none!important; overflow:hidden; cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
+section {background:#8a0a19; overflow:hidden; padding:0; margin:0; border:none; height:1420px!important;}
+header p, header img, footer p, footer img {margin:0!important; padding:0!important;}

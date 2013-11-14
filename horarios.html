@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+    <meta charset="UTF-8" />
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Jquery Library 1.7.1 -->
+	<script src="src/js/jquery-1.7.1.min.js"></script>
+    <!-- Fancybox 2.0.6 -->
+    <link rel="stylesheet" href="src/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="src/js/fancybox/jquery.fancybox.pack.js"></script> 
+     <!-- Jquery Mobile 1.1.0 -->
+	<script src="src/js/jquery.mobile/jquery.mobile.custom.min.js"></script>
+    <link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.structure.css" />
+    <link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
+    <!-- iScroll 4.0 -->
+	<script type="text/javascript" src="src/js/iscroll/iscroll.js"></script>
+ 	<!-- Estilo Base -->
+    <link rel="stylesheet" href="src/css/base/estilo.base.css" />
+    <script type="text/JavaScript">
+	var timeout;
+	document.onmousemove = function(){
+  	clearTimeout(timeout);
+  	timeout = setTimeout(function(){top.location.href='protector.html'}, 180000);
+	}
+	</script> 
+    </head> 
+
+<body> 
+<div data-role="page" id="horarios" class="mall-inicio-bg">
+	<script>
+	  $(document).ready(function() {
+		$("#efecto-pagina").css("display", "none");
+		$('#efecto-pagina').fadeIn(480);
+		/*---- ESTADISTICAS POR PAGINA------*/
+					var ur = window.location.href;
+					ur=ur.split("/");
+					ur=ur[4].split(".");
+					ur=ur[0];
+					$.get("addEstadistica.php", { nomPag: ur } );
+					/*---- ESTADISTICAS POR PAGINA------*/		
+	  });
+	</script>
+    
+	<div data-role="content">
+    <div class="titulos">
+    <div class="volver-btn"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    <div class="titulo-txt">
+    <h1>Horarios</h1>
+    </div>
+    </div>
+    
+<div id="efecto-pagina" class="contenedor-busqueda">
+<div class="bg-busquedas bg-busquedas-large">
+
+<div style="text-align:center;">
+<div id="resultadosHorarios">
+ <!-- ######################### FALABELLA #######################33-->
+<!--   PISO 1 -->
+<div style="float:left; margin-left:45px;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('6','6');" ><img src="src/img/h-falabella.jpg"></a></div>
+<!-- PISO 2
+	<div style="float:left; margin-left:45px;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('33','33');" ><img src="src/img/h-falabella.jpg"></a></div> -->
+<!--PISO 3 
+<div style="float:left; margin-left:45px;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('67','67');" ><img src="src/img/h-falabella.jpg"></a></div>
+-->	
+
+<!-- ######################### RIPLEY #######################33-->
+<!--   PISO 1 -->
+<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('5','5');" data-ajax="false"><img src="src/img/h-ripley.jpg"></a></div>
+<!-- PISO 2
+	<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('33','33');" data-ajax="false"><img src="src/img/h-ripley.jpg"></a></div>
+<!--PISO 3 
+	<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('67','67');" data-ajax="false"><img src="src/img/h-ripley.jpg"></a></div>
+-->	
+
+<!-- ######################### LA POLAR #######################33-->
+<!--   PISO 1 -->
+
+<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('7','7');" data-ajax="false"><img src="src/img/h-lapolar.jpg"></a></div>
+<!-- PISO 2
+	<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('34','34');" data-ajax="false"><img src="src/img/h-lapolar.jpg"></a></div>
+<!--PISO 3 
+	<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('68','68');" data-ajax="false"><img src="src/img/h-lapolar.jpg"></a></div>
+-->
+
+
+<!--div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('81','81');" data-ajax="false"><img src="src/img/h-paris.jpg"></a></div-->
+<div style="float:left;"><img src="src/img/h-horarios.jpg"></div>
+<a href="#" onclick= "cambiaRubro(27);" rel="external"><img src="src/img/h-menores.jpg"></a>
+<!--a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('118','118');" data-ajax="false"><img src="src/img/h-lider.jpg"></a-->
+<a href="#" onclick= "cambiaRubro(1);" data-ajax="false"><img src="src/img/h-autoplaza.jpg"></a>
+<!--a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('33','33');" data-ajax="false"><img src="src/img/h-homecenter.jpg"></a-->
+<a href="#" rel="external" onclick= "cambiaRubro(26);"><img src="src/img/h-comidas.jpg"></a>
+<!--a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('159','159');" data-ajax="false"><img src="src/img/h-civil.jpg"></a-->
+
+</div>
+</div>  
+</div>
+</div>
+
+<script> 
+function cargaPagina(ubicacion,idTienda)
+{
+	$.fancybox({
+		type		: "iframe",
+		fitToView	: true,
+		width		: 900,
+		height		: 1100,
+		padding 	: 40,
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'fade',
+		closeEffect	: 'elastic',
+		openSpeed	: 'normal',
+		helpers 	: { overlay : {opacity: 0.5, css : {'background-color' : '#440007'} } },
+		
+		href:"getCaminoMasCorto.php?inicio=263&meta="+ubicacion+"&idTienda="+idTienda+""
+	});
+}
+function cambiaRubro(rubro)
+{
+  $("#resultadosHorarios").load("rubros-horarios.php?rubro="+rubro+"");
+			return true;
+}
+</script>
+
+<div class="volver-bottom">
+<div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+</div>    
+
+</div><!-- /contenedor-busqueda -->
+</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>

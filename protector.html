@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Jquery Library 1.7.1 -->
+	<script src="src/js/jquery-1.7.1.min.js"></script>    
+    
+    <!-- Responsive Slides -->
+    <link rel="stylesheet" href="src/css/slides/responsiveslides.css" /> 
+    <script type="text/javascript" src="src/js/slides/responsiveslides.min.js"></script>  
+      
+    <!-- Estilo Base --> 
+    <link rel="stylesheet" href="src/css/base/estilo.base.index.css" /> 
+    </head>
+
+<body>
+  <script>
+  $(document).ready(function() {
+    /*---- ESTADISTICAS POR PAGINA------*/
+        var ur = window.location.href;
+        ur=ur.split("/");
+        ur=ur[4].split(".");
+        ur=ur[0];
+        $.get("addEstadistica.php", { nomPag: ur } );
+        /*---- ESTADISTICAS POR PAGINA------*/
+      });  
+    $(function () {
+		  $("#protector-slide").responsiveSlides({
+			maxwidth: 1080,
+			speed: 1250
+		  });
+    });
+  </script>
+
+    <!-- Slideshow 1 -->
+    <ul class="rslides" id="protector-slide">
+      <li><a href="index.html"><img src="src/img/protector1.jpg" width="1080" height="1920"></a></li>
+      <li><a href="index.html"><img src="src/img/protector2.jpg" width="1080" height="1920"></a></li>
+    </ul>
+
+</body>
+</html>

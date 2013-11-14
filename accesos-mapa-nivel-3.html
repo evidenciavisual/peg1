@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+    <meta charset="UTF-8" />
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head> 
+
+<body> 
+<div data-role="page" id="accesos" class="mall-inicio-bg">
+<script>
+	$(document).ready(function() {
+			 /*---- ESTADISTICAS POR PAGINA------*/
+        var ur = window.location.href;
+        ur=ur.split("/");
+        ur=ur[4].split(".");
+        ur=ur[0];
+        $.get("addEstadistica.php", { nomPag: ur } );
+        /*---- ESTADISTICAS POR PAGINA------*/
+			$(".click-rojo").bind("vclick",function(){
+				$("div.mapa-metro").toggle("slow");
+				$("div.rojo-activo").toggle("slow");
+			});
+
+			$(".click-verde").bind("vclick",function(){
+				$("div.mapa-transantiago").toggle("slow");
+				$("div.verde-activo").toggle("slow");
+			});	
+			
+			$(".click-amarillo").bind("vclick",function(){
+				$("div.mapa-estacionamiento").toggle("slow");
+				$("div.amarillo-activo").toggle("slow");
+			});							
+
+			$(".click-morado").bind("vclick",function(){
+				$("div.mapa-taxi").toggle("slow");
+				$("div.morado-activo").toggle("slow");
+			});
+
+			$(".click-celeste").bind("vclick",function(){
+			   $("div.mapa-colectivos").toggle("slow");
+			   $("div.celeste-activo").toggle("slow"); 
+			});		
+    });
+</script>
+    
+	<div data-role="content">
+    <div class="titulos">
+    <div class="volver-btn"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    <div class="titulo-txt">
+    <h1>Accesos</h1>
+    </div>
+    </div>
+    
+    
+<div id="efecto-pagina" class="contenedor-busqueda">
+<div class="bg-paginas">
+<h1 style="text-align:center; margin:0 0 15px 0; color:#666; font-weight:normal; font-size:36px">Nivel -3</h1>
+
+<a class="btn-servicios-mapa"></a>
+<a class="btn-servicios-mapa"></a>
+<!--<a class="click-morado btn-servicios-mapa"><img src="src/img/servicios-taxi.jpg" width="140" height="170"></a>
+<a class="click-celeste btn-servicios-mapa"><img src="src/img/servicios-colectivos.jpg" width="140" height="170"></a>
+<a class="btn-servicios-mapa"></a>
+<a class="click-rojo btn-servicios-mapa"><img src="src/img/servicios-metro.jpg" width="140" height="170"></a>-->
+<a class="click-amarillo btn-servicios-mapa"><img src="src/img/servicios-estacionamiento.jpg" width="140" height="170"></a>
+<a class="btn-servicios-mapa"></a>
+<a class="btn-servicios-mapa"></a>
+<a class="btn-servicios-mapa"></a>
+
+<div class="btn-seleccionado">
+<!--<div class="rojo-activo btn-activo pos-tres"></div>-->
+<div class="amarillo-activo btn-activo pos-tres"></div>
+<!--<div class="morado-activo btn-activo pos-cuatro"></div>
+<div class="celeste-activo btn-activo pos-cinco"></div>-->	
+</div>
+
+<div class="fondo-mapa-nivel-menos-tres">
+    <div class="mapa-estacionamiento"><img src="src/img/estacionamientos-3.png" width="920" height="700"></div>
+    <!--<div class="mapa-colectivos"><img src="src/img/accesos-colectivos.png" width="920" height="700"></div>      
+    <div class="mapa-taxi"><img src="src/img/accesos-taxi.png" width="920" height="700"></div>
+    <div class="mapa-transantiago"><img src="src/img/accesos-transantiago.png" width="920" height="700"></div>-->
+</div>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+
+<div style="margin:0 auto; text-align:left; clear:both; width:100%">
+<a href="accesos-mapa-nivel-4.html" data-transition="fade" style="margin:0 0 0 280px; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel-4-gris.jpg" width="71" height="75">
+</a>
+<a href="#" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel-3-rojo.jpg" width="71" height="75">
+</a>
+<a href="accesos-mapa-nivel-2.html" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel-2-gris.jpg" width="71" height="75">
+</a>
+<a href="accesos-mapa-nivel-1.html" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel-1-gris.jpg" width="71" height="75">
+</a>
+<a href="accesos-mapa-nivel01.html" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel1-gris.jpg" width="71" height="75">
+</a>
+</div>
+
+</div>
+</div><!-- /contenedor-busqueda -->
+
+    <div class="volver-bottom">
+    <div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    </div>
+
+</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>

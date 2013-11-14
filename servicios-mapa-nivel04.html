@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head> 
+    <meta charset="UTF-8" />
+	<title>Mall Plaza</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head> 
+
+<body> 
+<div data-role="page" id="servicios-mapa-nivel01" class="mall-inicio-bg">
+	<script>
+	  $(document).ready(function() {
+	  		 /*---- ESTADISTICAS POR PAGINA------*/
+	        var ur = window.location.href;
+	        ur=ur.split("/");
+	        ur=ur[4].split(".");
+	        ur=ur[0];
+	        $.get("addEstadistica.php", { nomPag: ur } );
+	        /*---- ESTADISTICAS POR PAGINA------*/	  
+			$(".click-celeste").bind("vclick",function(){
+			   $("div.mapa-banos").toggle("slow");
+			   $("div.celeste-activo").toggle("slow"); 
+			});
+			$(".click-morado").bind("vclick",function(){
+				$("div.mapa-coche").toggle("slow");
+				$("div.morado-activo").toggle("slow");
+			});
+			$(".click-rojo").bind("vclick",function(){
+				$("div.mapa-telefonos").toggle("slow");
+				$("div.rojo-activo").toggle("slow");
+			});
+			$(".click-amarillo").bind("vclick",function(){
+				$("div.mapa-cajeros").toggle("slow");
+				$("div.amarillo-activo").toggle("slow");
+			});							
+			$(".click-violeta").bind("vclick",function(){
+				$("div.mapa-lactancia").toggle("slow");
+				$("div.violeta-activo").toggle("slow");
+			});	
+			$(".click-verde").bind("vclick",function(){
+				$("div.mapa-mudadores").toggle("slow");
+				$("div.verde-activo").toggle("slow");
+			});	
+	  });
+	</script>
+    
+	<div data-role="content">
+    <div class="titulos">
+    <div class="volver-btn"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    <div class="titulo-txt">
+    <h1>Servicios Básicos</h1>
+    </div>
+    </div>
+    
+<div id="efecto-pagina" class="contenedor-busqueda">
+<div class="bg-paginas">
+<h1 style="text-align:center; margin:0 0 15px 0; color:#666; font-weight:normal; font-size:36px">Nivel 4</h1>
+<a class="btn-servicios-mapa"></a>
+<a class="btn-servicios-mapa"></a>
+<a class="click-celeste btn-servicios-mapa"><img src="src/img/servicios-bano.jpg" width="140" height="170"></a>
+<!--<a class="click-verde btn-servicios-mapa"><img src="src/img/servicios-mudador.jpg" width="140" height="170"></a>
+<a class="click-violeta btn-servicios-mapa"><img src="src/img/servicios-lactancia.jpg" width="140" height="170"></a>-->
+<a class="click-amarillo btn-servicios-mapa"><img src="src/img/servicios-cajero.jpg" width="140" height="170"></a>
+<!--<a class="click-rojo btn-servicios-mapa"><img src="src/img/servicios-telefono.jpg" width="140" height="170"></a>
+<a class="click-morado btn-servicios-mapa"><img src="src/img/servicios-coche.jpg" width="140" height="170"></a>-->
+<a class="btn-servicios-mapa"></a>
+
+<div class="btn-seleccionado">
+<div class="celeste-activo btn-activo pos-tres"></div>
+<!--<div class="verde-activo btn-activo pos-dos"></div>
+<div class="violeta-activo btn-activo pos-tres"></div>-->
+<div class="amarillo-activo btn-activo pos-cuatro"></div>
+<!--<div class="morado-activo btn-activo pos-seis"></div>
+<div class="rojo-activo btn-activo pos-cinco"></div>-->
+</div>
+
+<div class="fondo-mapa-nivel-cuatro">
+    <div class="mapa-cajeros"><img src="src/img/cajeros04.png" width="920" height="700"></div>
+    <!--<div class="mapa-mudadores"><img src="src/img/mudadores04.png" width="920" height="700"></div>
+    <div class="mapa-lactancia"><img src="src/img/lactancia04.png" width="920" height="700"></div>
+    <div class="mapa-telefonos"><img src="src/img/telefonos04.png" width="920" height="700"></div>
+    <div class="mapa-coche"><img src="src/img/coche01.png" width="920" height="700"></div>-->
+    <div class="mapa-banos"><img src="src/img/banos04.png" width="920" height="700"></div>
+</div>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+
+
+<div style="margin:0 auto; text-align:left; clear:both; width:100%">
+<a href="servicios-mapa-nivel-1.html" data-transition="fade" style="margin:0 0 0 340px; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel-1-gris.jpg" width="71" height="75">
+</a>
+<a href="servicios-mapa-nivel01.html" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel1-gris.jpg" width="71" height="75">
+</a>
+<a href="servicios-mapa-nivel02.html" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel2-gris.jpg" width="71" height="75">
+</a>
+<a href="servicios-mapa-nivel03.html" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel3-gris.jpg" width="71" height="75">
+</a>
+<a href="#" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
+	<img src="src/img/btn-nivel4-rojo.jpg" width="71" height="75">
+</a>
+</div>
+
+</div>
+</div>
+
+</div><!-- /contenedor-busqueda -->
+
+    <div class="volver-bottom">
+    <div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+    </div>
+
+</div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>
