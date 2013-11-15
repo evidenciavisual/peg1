@@ -145,8 +145,8 @@ if (file_exists('src/xml/descuentos.xml')) {
 
 
 	
-	file_put_contents("src/xml/descuentos2.xml", $file);
-    $xml = simplexml_load_file('src/xml/descuentos2.xml');
+	//file_put_contents("src/xml/descuentos2.xml", $file);
+    $xml = simplexml_load_file('src/xml/descuentos.xml');
     //var_dump($xml);
 //------------------------------------------------
 // FIN CARGA XML

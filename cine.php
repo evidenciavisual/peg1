@@ -161,9 +161,9 @@ if (file_exists('src/xml/cine.xml')) {
 	$file= str_replace("&lsquo;","‘",$file); */
 	//$file= str_replace("%0A", "", $file);
 
-	file_put_contents("src/xml/cine2.xml", $file);
+	//file_put_contents("src/xml/cine2.xml", $file);
 
-    $xml = simplexml_load_file('src/xml/cine2.xml');
+    $xml = simplexml_load_file('src/xml/cine.xml');
 //------------------------------------------------
 // FIN CARGA XML
 //------------------------------------------------

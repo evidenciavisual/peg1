@@ -146,8 +146,8 @@ if (file_exists('src/xml/eventos.xml')) {
 	//$file= str_replace("</div>", "", $file);
 
 	
-	file_put_contents("src/xml/eventos2.xml", $file);
-    $xml = simplexml_load_file('src/xml/eventos2.xml');
+	//file_put_contents("src/xml/eventos2.xml", $file);
+    $xml = simplexml_load_file('src/xml/eventos.xml');
 //------------------------------------------------
 // FIN CARGA XML
 //------------------------------------------------
