@@ -239,7 +239,8 @@ if (file_exists('src/xml/cine.xml')) {
 									</div> -->
 									<div id="reviewCorto">
 										<?php
-										echo $child->introtext->asXML();
+										$child->introtext->asXML();
+										echo strip_tags($child);
 										?>
 									</div>
 									<div id="horarioCine">
