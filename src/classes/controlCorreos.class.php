@@ -1,8 +1,8 @@
 <?php
 
 //if(!defined('PATH_SOURCE_CORE')) die ('Directorio de fuentes del nucleo no esta definida, por favor contacte al administrador o implementador.');
-require_once(dirname(__FILE__).'\..\core\conexionMySQLi.class.php');
-require_once(dirname(__FILE__).'\..\core\conf.class.php');
+require_once(dirname(__FILE__).'/../core/conexionMySQLi.class.php');
+require_once(dirname(__FILE__).'/../core/conf.class.php');
 
 
 class controlCorreos
