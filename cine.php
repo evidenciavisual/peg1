@@ -250,9 +250,9 @@ if (file_exists('src/xml/cine.xml')) {
 										        <ul>
 											  		<?php
 											  		echo "<li>";
-													foreach( $child->horario->children() as $horario )
+													foreach( $child->horario->child() as $horario )
 													{
-														echo $horario->asXML();
+														echo $horario;
 													}
 													echo "</li>";
 											    	?>

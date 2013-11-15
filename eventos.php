@@ -216,7 +216,7 @@ if (file_exists('src/xml/eventos.xml')) {
 									</div>
 									<div id="reviewEvento">
 										<?php
-										 echo $child->introtext->asXML();
+										 echo $child->introtext;
 										?>
 									</div>
 								</li>
