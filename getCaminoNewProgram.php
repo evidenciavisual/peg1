@@ -975,9 +975,9 @@ function generaMapa(camino)
 		sParis 		= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tParis.jpg' ), transparent: false, opacity: 1 } );
 		sRipley 	= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tRipley.jpg' ), transparent: false, opacity: 1 } );
 		sHomy		= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tHomy.jpg' ), transparent: false, opacity: 1 } );
-		sLider		= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tLider.jpg' ), transparent: false, opacity: 1 } );
+		sTottus		= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tTottus.jpg' ), transparent: false, opacity: 1 } );
 		sCinemark	= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tCinemark.jpg' ), transparent: false, opacity: 1 } );
-		sCinemundo	= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tCinemundo.jpg' ), transparent: false, opacity: 1 } );
+		sHoyts		= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tHoyts.jpg' ), transparent: false, opacity: 1 } );
 		sEstac	 	= new THREE.MeshLambertMaterial( { color: 0x97E8EB, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 1 } );
 		sBoulevard 	= new THREE.MeshLambertMaterial( { color: 0x67e1ad, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 1 } );
 		sTerrazas 	= new THREE.MeshLambertMaterial( { color: 0xffae23, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 1 } ); //ffae23
@@ -989,9 +989,9 @@ function generaMapa(camino)
 		/*
 			texturas con indix cambiados asociadeos a nombres de tiendas.
 		*/
-		texturas = { Falabella: sFalabella,Polar: sLaPolar, Paris: sParis, Ripley: sRipley, Lider: sLider, Homy: sHomy, Cinemark: sCinemark, Cinemundo: sCinemundo,Johnson: sJohnson };
+		texturas = { Falabella: sFalabella,Polar: sLaPolar, Paris: sParis, Ripley: sRipley, Tottus: sTottus, Homy: sHomy, Cinemark: sCinemark, Hoyts: sHoyts,Johnson: sJohnson };
 		
-		matPisoA = [activo, pasivo, pisoColor, sLaPolar, sFalabella, sParis, sRipley, sHomy, sLider, sCinemark, sEstac, sBoulevard, sTerrazas, sAutoplaza, sAires,sJohnson, sComidas];
+		matPisoA = [activo, pasivo, pisoColor, sLaPolar, sFalabella, sParis, sRipley, sHomy, sTottus, sCinemark, sEstac, sBoulevard, sTerrazas, sAutoplaza, sAires,sJohnson, sComidas, sHoyts];
 
 		activo2		= new THREE.MeshLambertMaterial( { color: 0x2186ba, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 0 } );
 		//pasivo = new THREE.MeshLambertMaterial( { color: 0xff0000, ambient: 0xff0000} );
@@ -1007,8 +1007,8 @@ function generaMapa(camino)
 		sLaPolar2 	= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tPolar.jpg' ), transparent: false, opacity: 0 } );
 		sHomy2		= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tHomy.jpg' ), transparent: false, opacity: 0 } );
 		sJohnson2	= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tJohnson.jpg' ), transparent: false, opacity: 0 } );
-		sLider2		= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tLider.jpg' ), transparent: false, opacity: 0 } );
-		sCinemundo2	= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tCinemundo.jpg' ), transparent: false, opacity: 0 } );
+		sTottus2	= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tTottus.jpg' ), transparent: false, opacity: 0 } );
+		sHoyts2		= new THREE.MeshLambertMaterial( { shading: THREE.FlatShading, map: THREE.ImageUtils.loadTexture( 'src/images/mapa/tHoyts.jpg' ), transparent: false, opacity: 0 } );
 		sAutoplaza2 = new THREE.MeshLambertMaterial( { color: 0x03579F, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 0 } );
 		sEstac2	 	= new THREE.MeshLambertMaterial( { color: 0x97E8EB, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 0 } );
 		sTerrazas2 	= new THREE.MeshLambertMaterial( { color: 0xffae23, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 0 } ); //ffae23
@@ -1024,8 +1024,8 @@ function generaMapa(camino)
 		sAires2		= new THREE.MeshLambertMaterial( { color: 0x919191, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 0 } );
 		sBoulevard2	= new THREE.MeshLambertMaterial( { color: 0x67e1ad, ambient: 0x000000, shading: THREE.FlatShading, transparent: false, opacity: 0 } );
 
-		texturasM = { Falabella: sFalabella2,Polar: sLaPolar2, Paris: sParis2, Ripley: sRipley2, Lider: sLider2, Homy: sHomy2, Cinemark: sCinemark2, Cinemundo: sCinemundo2,Johnson: sJohnson2 };
-		matPisoB = [activo2, pasivo2, pisoColor2,sEstac2,sFalabella2,sLaPolar2,sJohnson2,sAutoplaza2, sParis2, sRipley2, sCinemark2, sCinemark , sEstac2, sE_Azul, sE_Cyan, sE_Gris, sE_Rojo, sE_Verde, sComidas2, sAires2, sBoulevard2,sTerrazas2];
+		texturasM = { Falabella: sFalabella2,Polar: sLaPolar2, Paris: sParis2, Ripley: sRipley2, Tottus: sTottus2, Homy: sHomy2, Cinemark: sCinemark2, Hoyts: sHoyts2,Johnson: sJohnson2 };
+		matPisoB = [activo2, pasivo2, pisoColor2,sEstac2,sFalabella2,sLaPolar2,sJohnson2,sAutoplaza2, sParis2, sRipley2, sCinemark2, sCinemark , sEstac2, sE_Azul, sE_Cyan, sE_Gris, sE_Rojo, sE_Verde, sComidas2, sAires2, sBoulevard2,sTerrazas2, sHomy2, sTottus2, sHoyts2];
 		//console.log(tiendasAnclaMeta);
 		// Totem
 		var num;
@@ -2931,7 +2931,7 @@ function generaMapa(camino)
 		var loader = new THREE.SceneLoader();
 		loader.callbackProgress = callbackProgress;
 
-		loader.load( "src/js/mapa/PEG_gral_v03d.js", callbackFinished );
+		loader.load( "src/js/mapa/PEG_gral_v04c.js", callbackFinished );
 		
 	}
 }
