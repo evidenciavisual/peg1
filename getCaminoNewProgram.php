@@ -2931,7 +2931,7 @@ function generaMapa(camino)
 		var loader = new THREE.SceneLoader();
 		loader.callbackProgress = callbackProgress;
 
-		loader.load( "src/js/mapa/PEG_gral_v04c.js", callbackFinished );
+		loader.load( "src/js/mapa/PEG_gral_v04d.js", callbackFinished );
 		
 	}
 }
