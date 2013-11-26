@@ -199,8 +199,9 @@ if (file_exists('src/xml/cine.xml')) {
 					$('#cajaCine'+i+"").slideToggle("slow");
 				}
 			</script>
-
-			<img style="margin: 0 auto;" src="src/img/imax.png" />
+			<div style="text-align: center;">
+			<img src="src/img/imax.png" />
+			</div>
 
 		</div>
 
