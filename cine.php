@@ -200,7 +200,7 @@ if (file_exists('src/xml/cine.xml')) {
 				}
 			</script>
 
-			<img src="src/img/imax.png" />
+			<img style="margin: 0 auto;" src="src/img/imax.png" />
 
 		</div>
 
