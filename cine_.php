@@ -200,8 +200,118 @@ if (file_exists('src/xml/cine.xml')) {
 				}
 			</script>
 
-			<img src="src/img/imax.png" />
+			<div data-role="content">
+			    <div class="titulos">
+				    <div class="volver-btn">
+				    	<span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span>
+				    </div>
+				    <div class="titulo-txt">
+				    	<h1>Cartelera</h1>
+				    </div>
+			    </div>
+		    	<div class="bg-paginas-carrusel carrusel-cine">
+					<div id="wrapper-h-cine">
+						<script>ancho=470*(<?php echo $xml->count();?>+2); document.getElementById("scroller-h-cine").style.minWidth=ancho+"px";</script>
+						<div id="scroller-h-cine" style=" height:100%;float:left;padding:0;">
+							<ul id="thelist-h-cine">
+					   		<?php
+					   		$i=0;
+					  		foreach ($xml->children() as $child)
+							{
+								?>
+								<li><div id="fotoCine">
+										<?php
+										echo "<img src='".$child->afiche."' width='450' height='691'/>";
+										?>
+									</div>	
+									<!-- <img src="src/img/cine/dictador.jpg" width="450" height="691"> -->
+									<a href="#" class="boton info-cine" data-ajax="false" onclick="habilita('<?php echo $i;?>');"><span><p>Información</p></span></a>
+									<div class="caja-cine" id="cajaCine<?php echo $i;?>" >
+									<div id="tituloCine">
+										<?php
+										echo $child->titulo;
+										?>
+									</div>
+									<!-- <div id="fotoCine">
+										<?php
+										echo "<img src='".$child->afiche."' width='155' height='248'/>";
+										?>
+									</div> -->
+									<div id="reviewCorto">
+										<?php
+										$child->introtext->asXML();
+										echo strip_tags($child);
+										?>
+									</div>
+									<div id="horarioCine">
+										<p class="horarios">Horarios</p>
+										<div class="wrapper-h-horario" id="horarioScroll<?php echo $i;?>" style="height: 490px; position:relative; z-index:1; width auto; overflow:scroll;">
+										    <div id="scroller-h-horario">
+										        <ul>
+											  		<?php
+											  		echo "<li>";
+													foreach( $child->horario->children() as $horario )
+													{
+														echo $horario;
+													}
+													echo "</li>";
+											    	?>
+										        </ul> 
+										    </div> 
+										</div>
+										<script>
+										var scroll<?php echo $i;?> = new iScroll('horarioScroll<?php echo $i;?>');
+										</script>
 
+									  	
+									</div>
+									<div id="reviewLargo">
+									<?php
+									?>
+									</div>
+									</div>
+								</li>
+								<?php 
+									$i++;
+								} ?>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="bottom-cine">
+					<span><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('95','95');">¿Cómo llegar?</a></span>
+					<!-- Fancybox 2.0.6  -->
+			    	<link rel="stylesheet" href="src/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+					<script type="text/javascript" src="src/js/fancybox/jquery.fancybox.pack.js"></script>
+					<script>
+					function cargaPagina(ubicacion,idTienda)
+					{
+						$.fancybox({
+							type		: "iframe",
+							fitToView	: true,
+							width		: 900,
+							height		: 1100,
+							padding 	: 40,
+							autoSize	: false,
+							closeClick	: false,
+							openEffect	: 'fade',
+							closeEffect	: 'fade',
+							openSpeed	: 'normal',
+							helpers 	: { overlay : {opacity: 0.5, css : {'background-color' : '#440007'} } },
+							
+							href:"getCaminoMasCorto.php?inicio=219&meta="+ubicacion+"&idTienda="+idTienda+""
+						});
+					}
+					</script>
+				</div>
+
+				<div class="volver-bottom">
+					<div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+				</div>
+
+			</div>
 		</div>
 
 	</body>
