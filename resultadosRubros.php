@@ -61,7 +61,7 @@ else
     		foreach ($tiendasConRubro as $tiendas)
     		{
     			?>
-    			<li>
+    			<li class="piso_<?php echo $tiendas->getpiso();?>">
     			<a href="#" onclick= 'cargaPagina(<?php echo $tiendas->getubiTienda();?>,<?php echo $tiendas->getidtienda()?>);'>
     			
                 <?php  if (file_exists('src/img/logos/tiendas/'.$tiendas->getlogo())){ ?>   
