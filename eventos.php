@@ -190,7 +190,7 @@ if (file_exists('src/xml/eventos.xml')) {
 				    <div class="volver-btn">
 				    	<span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span>
 				    </div>
-				    <div class="titulo-txt"><h1>Eventos</h1></div>
+				    <div class="titulo-txt"><h1>Está pasando</h1></div>
 			    </div>
 
 		    	<div class="bg-paginas-carrusel">
