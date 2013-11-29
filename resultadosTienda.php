@@ -56,7 +56,7 @@ else
     			$inicial=$val[0];
     		}
     		?>
-    		<li>
+    		<li class="piso_<?php echo $result->getpiso();?>">
     		<a class='mapa fancybox.iframe' href="#" onclick= 'cargaPagina(<?php echo $result->getubiTienda();?>,<?php echo $result->getidtienda()?>)'>
              <?php  if (file_exists('src/img/logos/tiendas/'.$result->getlogo())){ ?>   
     		<img src='src/img/logos/tiendas/<?php echo $result->getlogo();?>' width='120' height='100'>
