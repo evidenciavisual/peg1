@@ -205,10 +205,17 @@ if (file_exists('src/xml/cine.xml')) {
 				    	<span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span>
 				    </div>
 				    <div class="titulo-txt">
+<<<<<<< HEAD
 				    	<h1>Cine</h1>
 				    </div>
 			    </div>
 			<div style="text-align: center; margin-top: 10px;height:90%;width:auto;">
+=======
+				    	<h1>Cartelera</h1>
+				    </div>
+			    </div>
+			<div style="text-align: center; margin-top: 10px;">
+>>>>>>> 51ec3c63dec6b96f1f45bb208f5dba37ced222a7
 			<img src="src/img/imax.png" />
 			</div>
 
