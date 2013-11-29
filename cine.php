@@ -180,25 +180,6 @@ if (file_exists('src/xml/cine.xml')) {
 
 	<body> 
 		<div data-role="page" id="cine" class="mall-inicio-bg">
-		  	<script type="text/javascript">
-				$('#cine').bind('pageshow', function(event, ui){
-					var myScroll = new iScroll('wrapper-h-cine');
-					/*---- ESTADISTICAS POR PAGINA------*/
-					var ur = window.location.href;
-					ur=ur.split("/");
-					ur=ur[4].split(".");
-					//alert(ur[0]);
-					ur=ur[0];
-					$.get("addEstadistica.php", { nomPag: ur } );
-					/*---- ESTADISTICAS POR PAGINA------*/					
-				});	
-			</script>
-			<script>
-				function habilita(i)
-				{
-					$('#cajaCine'+i+"").slideToggle("slow");
-				}
-			</script>
 						<div data-role="content">
 			    <div class="titulos">
 				    <div class="volver-btn">
