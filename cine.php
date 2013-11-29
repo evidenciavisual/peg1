@@ -199,12 +199,21 @@ if (file_exists('src/xml/cine.xml')) {
 					$('#cajaCine'+i+"").slideToggle("slow");
 				}
 			</script>
+						<div data-role="content">
+			    <div class="titulos">
+				    <div class="volver-btn">
+				    	<span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span>
+				    </div>
+				    <div class="titulo-txt">
+				    	<h1>Cartelera</h1>
+				    </div>
+			    </div>
 			<div style="text-align: center; margin-top: 10px;">
 			<img src="src/img/imax.png" />
 			</div>
 
 		</div>
-
+</div>
 	</body>
 </html>
 <?php
