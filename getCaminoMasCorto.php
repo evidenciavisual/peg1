@@ -34,10 +34,12 @@ $idTienda=$_GET['idTienda'];
             
             <div class="nombre-tienda">
                 <p class="texto-lista"><?php echo $tienda->getnombre()?></p>
-                <p class="subtexto-lista">Nivel <?php echo $tienda->getpiso()?></p>
+				<?php if ($tienda->getpiso()=="-1") $piso = "0";
+                    else $piso = $tienda->getpiso();?>
+                <p class="subtexto-lista">Nivel <?php echo $piso?></p>
             </div>
     </div>
-	<h1 class="titulo-mapa">Ruta a tu tienda en Nivel <?php echo $tienda->getpiso()?></h1>
+	<h1 class="titulo-mapa">Ruta a tu tienda en Nivel <?php echo $piso?></h1>
 
     <script>
 	$(window).bind("load", function() {
