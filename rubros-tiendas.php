@@ -71,7 +71,9 @@ $numero=controlTienda::contarRubros();
     			<a href="#" onclick= 'cargaPagina(<?php echo $tiendas->getubiTienda();?>,<?php echo $tiendas->getidtienda()?>);'>
     			<p class="texto-lista"><?php echo $tiendas->getnombre();?></p>
     			</a>
-    			<p class="subtexto-lista">Nivel <?php echo  $tiendas->getpiso(); ?></p></div>
+				<?php if ($tiendas->getpiso()=="-1")$piso = "0";
+                    else $piso = $tiendas->getpiso();?>
+    			<p class="subtexto-lista">Nivel <?php echo $piso?></p></div>
     			<a class='button-mapa'
     				name="<?php echo $tiendas->getidtienda();?>"
     				onclick= 'cargaPagina(<?php echo $tiendas->getubiTienda();?>,<?php echo $tiendas->getidtienda()?>);'>
