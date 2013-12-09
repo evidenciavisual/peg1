@@ -74,7 +74,7 @@ else
 
     			<div class='nombre-tienda'>
     			<p class="texto-lista"><a href="#" onclick= 'cargaPagina(<?php echo $tiendas->getubiTienda();?>,<?php echo $tiendas->getidtienda()?>);'><?php echo $tiendas->getnombre();?></a></p>
-                <?php if ($tiendas->getpiso()=="-4")$piso = "-1";
+                <?php if ($tiendas->getpiso()=="-1")$piso = "0";
                     else $piso = $tiendas->getpiso();?>
 
                 <p class="subtexto-lista">Nivel <?php echo  $piso;?></p>

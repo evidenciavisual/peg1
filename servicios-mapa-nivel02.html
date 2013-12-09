@@ -17,10 +17,7 @@
 	        ur=ur[0];
 	        $.get("addEstadistica.php", { nomPag: ur } );
 	        /*---- ESTADISTICAS POR PAGINA------*/	  
-			$(".click-celeste").bind("vclick",function(){
-			   $("div.mapa-banos").toggle("slow");
-			   $("div.celeste-activo").toggle("slow"); 
-			});
+
 			$(".click-morado").bind("vclick",function(){
 				$("div.mapa-coche").toggle("slow");
 				$("div.morado-activo").toggle("slow");
@@ -57,7 +54,6 @@
 <h1 style="text-align:center; margin:0 0 15px 0; color:#666; font-weight:normal; font-size:36px">Nivel 2</h1>
 <a class="btn-servicios-mapa"></a>
 <a class="btn-servicios-mapa"></a>
-<a class="click-celeste btn-servicios-mapa"><img src="src/img/servicios-bano.jpg" width="140" height="170"></a>
 <!--<a class="click-verde btn-servicios-mapa"><img src="src/img/servicios-mudador.jpg" width="140" height="170"></a>
 <a class="click-violeta btn-servicios-mapa"><img src="src/img/servicios-lactancia.jpg" width="140" height="170"></a>-->
 <a class="click-amarillo btn-servicios-mapa"><img src="src/img/servicios-cajero.jpg" width="140" height="170"></a>
@@ -66,10 +62,9 @@
 <a class="btn-servicios-mapa"></a>
 
 <div class="btn-seleccionado">
-<div class="celeste-activo btn-activo pos-tres"></div>
 <!--<div class="verde-activo btn-activo pos-dos"></div>
 <div class="violeta-activo btn-activo pos-tres"></div>-->
-<div class="amarillo-activo btn-activo pos-cuatro"></div>
+<div class="amarillo-activo btn-activo pos-tres"></div>
 <!--<div class="morado-activo btn-activo pos-seis"></div>
 <div class="rojo-activo btn-activo pos-cinco"></div>-->
 </div>
@@ -80,7 +75,6 @@
     <div class="mapa-lactancia"><img src="src/img/lactancia04.png" width="920" height="700"></div>
     <div class="mapa-telefonos"><img src="src/img/telefonos04.png" width="920" height="700"></div>
     <div class="mapa-coche"><img src="src/img/coche01.png" width="920" height="700"></div>-->
-    <div class="mapa-banos"><img src="src/img/banos02.png" width="920" height="700"></div>
 </div>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 
 
@@ -93,12 +87,6 @@
 </a>
 <a href="#" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
 	<img src="src/img/btn-nivel2-rojo.jpg" width="71" height="75">
-</a>
-<a href="servicios-mapa-nivel03.html" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
-	<img src="src/img/btn-nivel3-gris.jpg" width="71" height="75">
-</a>
-<a href="servicios-mapa-nivel04.html" data-transition="fade" style="margin:0; padding:0; text-decoration:none;">
-	<img src="src/img/btn-nivel4-gris.jpg" width="71" height="75">
 </a>
 </div>
 

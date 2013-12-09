@@ -69,7 +69,7 @@ else
                 <p class="texto-lista"><a class='mapa fancybox.iframe'
     				name="<?php echo $result->getidtienda();?>"
     				onclick= 'cargaPagina(<?php echo $result->getubiTienda();?>,<?php echo $result->getidtienda()?>)'><?php echo $result->getnombre();?></a></p>
-                    <?php if ($result->getpiso()=="-4") $piso = "-1";
+                    <?php if ($result->getpiso()=="-1") $piso = "0";
                     else $piso = $result->getpiso();?>
 
                 <p class="subtexto-lista">Nivel <?php echo $piso; ?></p></div>
