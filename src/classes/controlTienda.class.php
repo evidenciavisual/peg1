@@ -17,7 +17,7 @@ class controlTienda
 	public function insertTienda($data)
 	{
 		$sql = conexionMySQLi::getInstance();
-		$sentencia = "INSERT INTO tienda (idtienda,nombre,logo) VALUES(?,?,?)";
+		$sentencia = "INSERT INTO tienda (idtienda,nombre,logo) VALUES(?,?,?) ON DUPLICATE KEY UPDATE idtienda=values(idtienda), nombre=values(nombre), logo=values(logo)";
 		$resultado = null;
 		$resultado = $sql->ejecutarSentencia($sentencia,$data);
 		
