@@ -125,5 +125,4 @@ input.facebook {margin:0 auto 10px auto; background:#FFF; border:#CCC 1px solid;
 input.facebook:focus {border:#999 1px solid; -webkit-box-shadow: inset 0px 0px 18px 13px rgba(98, 98, 98, 0.2);box-shadow: inset 0px 0px 18px 13px rgba(98, 98, 98, 0.2);}
 html, body, img, a {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
 input, label {cursor: none!important;}
-li.piso_3 { display:none !important; }
 li.piso_4 { display: none !important; }
