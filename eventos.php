@@ -5,7 +5,7 @@
 if (file_exists('src/xml/pasando.xml')) {
 	$file= file_get_contents('src/xml/pasando.xml');
 	$file= str_replace("
-</afiche>", "</afiche>", $file);
+</imagen>", "</imagen>", $file);
 
 	$file= str_replace("&iexcl;", "¡", $file);
 	$file= str_replace("&lt;","<",$file);
@@ -206,7 +206,7 @@ if (file_exists('src/xml/pasando.xml')) {
 								<li class="lista-eventos">
 									<div id="fotoEvento">
 										<?php
-										 echo "<img src='".$child->afiche."' width='393' height='262'/>";
+										 echo "<img src='".$child->imagen."' width='393' height='262'/>";
 										?>
 									</div>	
 									<div id="tituloEvento">
