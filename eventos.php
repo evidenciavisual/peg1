@@ -2,8 +2,8 @@
 //------------------------------------------------
 // CARGA DE ARCHIVO XML
 //------------------------------------------------
-if (file_exists('src/xml/eventos.xml')) {
-	$file= file_get_contents('src/xml/eventos.xml');
+if (file_exists('src/xml/pasando.xml')) {
+	$file= file_get_contents('src/xml/pasando.xml');
 	$file= str_replace("
 </afiche>", "</afiche>", $file);
 
@@ -147,7 +147,7 @@ if (file_exists('src/xml/eventos.xml')) {
 
 	
 	//file_put_contents("src/xml/eventos2.xml", $file);
-    $xml = simplexml_load_file('src/xml/eventos.xml');
+    $xml = simplexml_load_file('src/xml/pasando.xml');
 //------------------------------------------------
 // FIN CARGA XML
 //------------------------------------------------
