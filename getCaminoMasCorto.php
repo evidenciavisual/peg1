@@ -10,7 +10,7 @@ $idTienda=$_GET['idTienda'];
 
 ?>
 <!-- Jquery Library 1.7.1 -->
-<script src="src/js/jquery-1.7.1.min.js"></script>
+<script src="src/js/jquery-1.8.3.min.js"></script>
 	<script src="src/js/mapa/Three.js"></script>
 		<script src="src/js/mapa/Detector.js"></script>
 		<script src="src/js/mapa/Stats.js"></script>
@@ -58,4 +58,12 @@ $idTienda=$_GET['idTienda'];
     });
     </script>
 	</div>
+	<script src="http://futura.bigbox.info:8888/socket.io/socket.io.js"></script>
+<script>
+	var php_var = "<?php echo $tienda->getnombre()?>";
+    var socket = io.connect('http://futura.bigbox.info:8888');
+    socket.on('connect', function () {
+      socket.send(php_var);
+    });
+</script>
 
