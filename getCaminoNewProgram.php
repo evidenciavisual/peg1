@@ -8,7 +8,7 @@ $inicio=$_GET["inicio"];
 $meta=$_GET["meta"];
 if (isset ($_GET['id']))$idTienda=$_GET['id'];
 else $idTienda=null;
-if (isset ($_GET["foto"])&&file_exists("src/img/logos/tiendas/".$_GET["foto"]))
+if (isset ($_GET["foto"]))
 	$foto=$_GET["foto"];
 else $foto="null.jpg";
 $totem = controlTotem::getTotem($inicio);
@@ -1806,7 +1806,7 @@ function generaMapa(camino)
 
 		//var sLineas = new THREE.LineBasicMaterial( { color: 0xff0000, opacity: 1, linewidth: 2 } );
         var iHudInicio = THREE.ImageUtils.loadTexture( 'src/images/mapa/hudInicio.png' );
-        var iHudDestino = THREE.ImageUtils.loadTexture( "src/img/logos/tiendas/<?php echo $foto;?>" );
+        var iHudDestino = THREE.ImageUtils.loadTexture( "<?php echo $foto;?>" );
 
         var spHudInicio = new THREE.Sprite( { map: iHudInicio, useScreenCoordinates: false, color: 0xffffff } );
 		spHudInicio.scale.x = 0.06; // era 0.12

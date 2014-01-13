@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
     <!-- iScroll 4.0 -->
 	<script type="text/javascript" src="src/js/iscroll/iscroll.js"></script>
+	
+	<script type="text/javascript" src="src/js/tiendas.js"></script>
  	<!-- Estilo Base -->
     <link rel="stylesheet" href="src/css/base/estilo.base.css" />
     <script type="text/JavaScript">
@@ -57,7 +59,7 @@
 <div id="resultadosHorarios">
  <!-- ######################### FALABELLA #######################33-->
 <!--   PISO 1 -->
-<div style="float:left; margin-left:45px;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('48','48');" ><img src="src/img/h-falabella.jpg"></a></div>
+<div style="float:left; margin-left:45px;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina(48,48,1,'Falabella','http://null.jpg');" ><img src="src/img/h-falabella.jpg"></a></div>
 <!-- PISO 2
 	<div style="float:left; margin-left:45px;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('33','33');" ><img src="src/img/h-falabella.jpg"></a></div> -->
 <!--PISO 3 
@@ -66,7 +68,7 @@
 
 <!-- ######################### RIPLEY #######################33-->
 <!--   PISO 1 -->
-<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('49','49');" data-ajax="false"><img src="src/img/h-ripley.jpg"></a></div>
+<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina(49,49,1,'Ripley','http://null.jpg');" data-ajax="false"><img src="src/img/h-ripley.jpg"></a></div>
 <!-- PISO 2
 	<div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('33','33');" data-ajax="false"><img src="src/img/h-ripley.jpg"></a></div>
 <!--PISO 3 
@@ -86,11 +88,11 @@
 
 <!--div style="float:left;"><a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('81','81');" data-ajax="false"><img src="src/img/h-paris.jpg"></a></div-->
 <div style="float:right;margin-right:100px;"><img src="src/img/h-horarios.jpg"></div>
-<a href="#" onclick= "cambiaRubro(27);" rel="external"><img src="src/img/h-menores.jpg"></a>
+<a href="#" onclick="cambiaRubro('Tiendas menores');" rel="external"><img src="src/img/h-menores.jpg"></a>
 <!--a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('118','118');" data-ajax="false"><img src="src/img/h-lider.jpg"></a-->
-<a href="#" onclick= "cambiaRubro(1);" data-ajax="false"><img src="src/img/h-autoplaza.jpg"></a>
+<a href="#" onclick="cambiaRubro('Auto Plaza');" data-ajax="false"><img src="src/img/h-autoplaza.jpg"></a>
 <!--a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('33','33');" data-ajax="false"><img src="src/img/h-homecenter.jpg"></a-->
-<a href="#" rel="external" onclick= "cambiaRubro(26);"><img src="src/img/h-comidas.jpg"></a>
+<a href="#" rel="external" onclick="cambiaRubro('Food Court');"><img src="src/img/h-comidas.jpg"></a>
 <!--a href="#" class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina('159','159');" data-ajax="false"><img src="src/img/h-civil.jpg"></a-->
 
 </div>
@@ -99,28 +101,17 @@
 </div>
 
 <script> 
-function cargaPagina(ubicacion,idTienda)
+function cambiaRubro(area)
 {
-	$.fancybox({
-		type		: "iframe",
-		fitToView	: true,
-		width		: 900,
-		height		: 1100,
-		padding 	: 40,
-		autoSize	: false,
-		closeClick	: false,
-		openEffect	: 'fade',
-		closeEffect	: 'elastic',
-		openSpeed	: 'normal',
-		helpers 	: { overlay : {opacity: 0.5, css : {'background-color' : '#440007'} } },
-		
-		href:"getCaminoMasCorto.php?inicio=263&meta="+ubicacion+"&idTienda="+idTienda+""
-	});
-}
-function cambiaRubro(rubro)
-{
-  $("#resultadosHorarios").load("rubros-horarios.php?rubro="+rubro+"");
-			return true;
+ 	$("#resultadosHorarios").empty();
+	var html = document.getElementById('resultadosHorarios');
+	html.innerHTML += "<div class='titulo-rubro'><div class='volver-rubros-btn'><span><a href='horarios.html' rel='external'></a></span></div>"+area+"</div><div id='wrapper' class='wrapper wrapper-extendido-rubros efecto-pagina'><div id='scroller'><ul id='thelist'></ul></div></div></div></div>";
+	if (area == 'Tiendas menores') { tiendas.sort(sortOn("nombre"));htmlListaTiendas(tiendas,thelist); }
+	else {
+	var temporal = tiendasPorArea(tiendas,area);
+	htmlListaTiendas(temporal,thelist);
+	}
+	var myScroll = new iScroll('wrapper');
 }
 </script>
 

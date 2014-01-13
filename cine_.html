@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	    <meta charset="UTF-8" />
+		<title>Mall Plaza</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	</head>
+	<body>
+		<div data-role="page" id="cine" class="mall-inicio-bg">
+			<script type="text/javascript">
+				$('#cine').bind('pageshow', function(event, ui){
+					var myScroll = new iScroll('wrapper-h-cine');
+					/*---- ESTADISTICAS POR PAGINA------*/
+					var ur = window.location.href;
+					ur=ur.split("/");
+					ur=ur[4].split(".");
+					//alert(ur[0]);
+					ur=ur[0];
+					$.get("addEstadistica.php", { nomPag: ur } );
+					/*---- ESTADISTICAS POR PAGINA------*/					
+				});	
+			</script>
+			<script>
+				function habilita(i)
+				{
+					$('#cajaCine'+i+"").slideToggle("slow");
+				}
+			</script>
+			<div data-role="content">
+			    <div class="titulos">
+				    <div class="volver-btn">
+				    	<span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span>
+				    </div>
+				    <div class="titulo-txt">
+				    	<h1>Cartelera</h1>
+				    </div>
+			    </div>
+		    	<div class="bg-paginas-carrusel carrusel-cine">
+					<div id="wrapper-h-cine">
+						<div id="scroller-h-cine" style="height:100%;float:left;padding:0;">
+							<ul id="thelist-h-cine">
+								<script>
+					function loadXMLDoc(dname) {
+				if (window.XMLHttpRequest) {
+					xhttp=new XMLHttpRequest();
+				} else {
+					xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xhttp.open("GET",dname,false);
+				xhttp.send();
+				return xhttp.responseXML;
+			}
+		var xmlDoc;
+		var cineXml;
+		var cineJson = [];
+		var html = document.getElementById('thelist-h-cine');
+				xmlDoc = loadXMLDoc("src/xml/cine.xml");
+				cineXml = Array.prototype.slice.call(xmlDoc.getElementsByTagName("pelicula"));
+				for (i=0;i<cineXml.length;i++)
+					{
+				if (typeof(cineXml[i]) != 'undefined') {
+				var titulo = cineXml[i].getElementsByTagName("titulo")[0].childNodes[0].nodeValue;	
+				if (typeof(cineXml[i].getElementsByTagName("introtext")[0]) != 'undefined') { var txt = cineXml[i].getElementsByTagName("introtext")[0].childNodes[0].nodeValue; }
+				if (typeof(cineXml[i].getElementsByTagName("horario")[0].childNodes[0]) != 'undefined') { var horario = cineXml[i].getElementsByTagName("horario")[0].childNodes[0].nodeValue; }
+				if (typeof(cineXml[i].getElementsByTagName("afiche")[0]) != 'undefined') { var afiche = cineXml[i].getElementsByTagName("afiche")[0].childNodes[0].nodeValue; }
+				afiche = encodeURI(afiche);
+				cineJson.push({
+						titulo: titulo,
+						txt: txt,
+						horario: horario,
+						afiche: afiche
+							});
+					}
+					}
+		var ancho=470*(cineJson.length+2);
+		document.getElementById("scroller-h-cine").style.minWidth=ancho+"px";
+				for (k=0;k<cineJson.length;k++) {
+		if (typeof(cineJson[k].horario == 'undefined')) { cineJson[k].horario = ""; }
+		var id = "cajaCine"+k+"";
+		var idh = "horarioScroll"+k+"";
+		var idHabilita = "habilita("+k+");";
+		html.innerHTML  += "<li><div id='fotoCine'><img src='"+cineJson[k].afiche+"' width='450' height='691'/></div><a class='boton info-cine' data-ajax='false'   onclick='"+idHabilita+"'><span><p>Información</p></span></a><div class='caja-cine' id='"+id+"'><div id='tituloCine'>"+cineJson[k].titulo+"</div><div id='reviewCorto'>"+cineJson[k].txt+"</div><div id='horarioCine'><p class='horarios'>Horarios</p><div class='wrapper-h-horario'  id='"+idh+"' style='height: 490px; position:relative; z-index:1; width auto; overflow:hidden;'><div id='scroller-h-horario'><ul>"+cineJson[k].horario+"</ul></div></div></div></div></li>";
+		}
+		</script>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="bottom-cine">
+					<span><a class="como-llegar-cine fancybox.iframe button-mapa" onclick="cargaPagina(191,191,4,'CineHoyts','http://null.jpg');">¿Cómo llegar?</a></span>
+					<!-- Fancybox 2.0.6  -->
+			    	<link rel="stylesheet" href="src/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+					<script type="text/javascript" src="src/js/fancybox/jquery.fancybox.pack.js"></script>
+					<script> 
+					function cargaPagina(ubicacion,idTienda,piso,nombre,logo)
+					{
+						$.fancybox({
+							type		: "iframe",
+							fitToView	: true,
+							width		: 900,
+							height		: 1100,
+							padding 	: 40,
+							autoSize	: false,
+							closeClick	: false,
+							openEffect	: 'fade',
+							closeEffect	: 'elastic',
+							openSpeed	: 'normal',
+							helpers 	: { overlay : {opacity: 0.5, css : {'background-color' : '#440007'} } },
+							href:"getCaminoMasCorto.php?inicio=263&meta="+ubicacion+"&idTienda="+idTienda+"&piso="+piso+"&nombre="+nombre+"&logo="+logo+""
+						});
+					}
+					</script>
+				</div>
+
+				<div class="volver-bottom">
+					<div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+</html>

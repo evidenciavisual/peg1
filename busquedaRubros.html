@@ -1,9 +1,6 @@
-<?php 
-?>
 <!DOCTYPE html> 
 <html> 
 	<head> 
-    <meta charset="UTF-8" />
 	<title>Mall Plaza</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<!-- Jquery Library 1.7.1 -->
@@ -19,7 +16,7 @@
     <!-- Fancybox 2.0.6 -->
     <link rel="stylesheet" href="src/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="src/js/fancybox/jquery.fancybox.pack.js"></script>
-	
+	<script type="text/javascript" src="src/js/tiendas.js"></script>	
 	<script type="text/JavaScript">
 	var timeout;
 	document.onmousemove = function(){
@@ -61,10 +58,9 @@
 <div class="contenedor-busqueda">
 <div class="contenedor-busquedas-btn">
 <ul class="busquedas">
-<li><a href="busquedaTiendas.php" data-transition="fade" rel="external">Por Tienda</a></li>
+<li><a href="busquedaTiendas.html" data-transition="fade" rel="external">Por Tienda</a></li>
 <li class="current"><a href="#" >Por Rubro</a></li>
-<li><a href="busquedaMarcas.php" data-transition="fade" rel="external">Por Marcas</a></li>
-<li><a href="busquedaProductos.php" data-transition="fade" rel="external">Por Productos</a></li>
+<li><a href="busquedaProductos.html" data-transition="fade" rel="external">Por Productos</a></li>
 </ul> 
 </div>
 
@@ -76,7 +72,17 @@
 </div>
 
 <div class="bg-busquedas">
-<div id="resultadosRubros" class="efecto-pagina" style= "margin: 0; padding: 0;"></div>
+<div id="resultados" class="efecto-pagina" style= "margin: 0; padding: 0;">
+
+	<div id="wrapper" class="wrapper-extendido wrapper-margin"> 
+		<div id="scroller">
+			<ul id="thelist">
+    		<div id="resultadosRubros">
+
+			</div>
+			</ul>
+		</div>
+	</div>
 </div>
 </div><!-- /contenedor-busqueda -->
 
@@ -86,19 +92,17 @@
 
 </div><!-- /content -->
 </div><!-- /page -->
-
 <script>
-//######################## INICIO SCRIPT DE BUSQUEDA ##################
-$(document).ready(function () {
-	buscaRubros();
+$( document ).ready(function() {
+    htmlListaRubros(tiendas);
+	var myScroll = new iScroll('wrapper');
 });
-var i=1;
-var a="";
-function buscaRubros(){
-	$("#resultadosRubros").load("resultadosRubros.php");
-		return true;
+function listaTiendasPorRubro(rubro){
+	$('#resultadosRubros').empty();
+	var temporal = checkRubro(tiendas,rubro);
+	htmlListaTiendas(temporal[1],resultadosRubros);
+	var myScroll = new iScroll('wrapper');
 }
 </script>
-
 </body>
 </html>

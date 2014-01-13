@@ -7,6 +7,9 @@ require_once 'src/classes/controlTienda.class.php';
 $inicio="240";		// era 219
 $meta=$_GET['meta'];
 $idTienda=$_GET['idTienda'];
+$piso=$_GET['piso'];
+$nombre=$_GET['nombre'];
+$logo=$_GET['logo'];
 
 ?>
 <!-- Jquery Library 1.7.1 -->
@@ -21,25 +24,15 @@ $idTienda=$_GET['idTienda'];
 	    <script src="src/js/mapa/ExtrudeGeometry.js"></script>
 	    <link rel="stylesheet" href="src/css/base/iframes.css" />
 	    <link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
-		<?php $tienda= controlTienda::getTienda($idTienda); ?>
 
     <div class="titulo-iframe">
-
-	         <?php  if (file_exists('src/img/logos/tiendas/'.$tienda->getlogo())){ ?>   
-	    	<img src="src/img/logos/tiendas/<?php echo $tienda->getlogo();?>" width='120' height='100'>
-	        <?php }
-	        else {?>
-	        <img src='src/img/logos/tiendas/null.jpg' width='120' height='100'>
-	        <?php }?>
-            
+	        <img src='<?php echo $logo ?>' width='120' height='100'>
             <div class="nombre-tienda">
-                <p class="texto-lista"><?php echo $tienda->getnombre()?></p>
-				<?php if ($tienda->getpiso()=="-1") $piso = "0";
-                    else $piso = $tienda->getpiso();?>
-                <p class="subtexto-lista">Nivel <?php echo $piso?></p>
+                <p class="texto-lista"><?php echo $nombre ?></p>				
+                <p class="subtexto-lista">Nivel <?php echo $piso ?></p>
             </div>
     </div>
-	<h1 class="titulo-mapa">Ruta a tu tienda en Nivel <?php echo $piso?></h1>
+	<h1 class="titulo-mapa">Ruta a tu tienda en Nivel <?php echo $piso ?></h1>
 
     <script>
 	$(window).bind("load", function() {
@@ -54,16 +47,7 @@ $idTienda=$_GET['idTienda'];
 	<script>
     //$("#mapa").load("src/view/mapaView.php?idTienda=<?php //echo $idTienda;?>&camino=<?php //echo $cam;?>");
     $(document).ready(function() {
-    $("#mapa").load("getCaminoNewProgram.php?id=<?php echo $idTienda; ?>&inicio=<?php echo $inicio;?>&meta=<?php echo $meta;?>&foto=<?php echo $tienda->getlogo()?>");
+    $("#mapa").load("getCaminoNewProgram.php?id=<?php echo $idTienda; ?>&inicio=<?php echo $inicio;?>&meta=<?php echo $meta;?>&foto=<?php echo $logo;?>");
     });
     </script>
 	</div>
-	<script src="http://futura.bigbox.info:8888/socket.io/socket.io.js"></script>
-<script>
-	var php_var = "<?php echo $tienda->getnombre()?>";
-    var socket = io.connect('http://futura.bigbox.info:8888');
-    socket.on('connect', function () {
-      socket.send(php_var);
-    });
-</script>
-

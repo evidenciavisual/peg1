@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="src/css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
     <!-- iScroll 4.0 -->
     <script type="text/javascript" src="src/js/iscroll/iscroll.js"></script>
+	
+	<script type="text/javascript" src="src/js/tiendas.js"></script>
     <!-- Fancybox -->    
     <script src="src/js/fancybox/jquery.fancybox.pack.js"></script>
     <link rel="stylesheet" href="src/css/fancybox/jquery.fancybox.css" /> 
@@ -54,21 +56,31 @@
 		<div class="bg-busquedas efecto-pagina">
 		<div id="resultadosRubrosServicios">
 				<ul class="paginas-botones">
-				<li><a href="#" onclick="muestraResult(19);"><img src="src/img/bancos-cajas-de-cambio.jpg" width="256" height="200"></a></li>
-				<li><a href="#" onclick="muestraResult(20);"><img src="src/img/pago.jpg" width="256" height="200"></a></li>
-				<li><a href="#" onclick="muestraResult(22);"><img src="src/img/servicios-hogar.jpg" width="256" height="200"></a></li>
-				<li><a href="#" onclick="muestraResult(23);"><img src="src/img/salud-belleza.jpg" width="256" height="200"></a></li>
-				<li><a href="#" onclick="muestraResult(24);"><img src="src/img/pasajes.jpg" width="256" height="200"></a></li>
+				<li><a href="#" onclick="muestraResult('Bancos','Cambio de Monedas');"><img src="src/img/bancos-cajas-de-cambio.jpg" width="256" height="200"></a></li>
+				<li><a href="#" onclick="muestraResult('Pagos');"><img src="src/img/pago.jpg" width="256" height="200"></a></li>
+				<li><a href="#" onclick="muestraResult('Servicios');"><img src="src/img/servicios-hogar.jpg" width="256" height="200"></a></li>
+				<li><a href="#" onclick="muestraResult('Belleza','Salud');"><img src="src/img/salud-belleza.jpg" width="256" height="200"></a></li>
+				<li><a href="#" onclick="muestraResult('Venta de Pasajes');"><img src="src/img/pasajes.jpg" width="256" height="200"></a></li>
 				<li><a href="#"></a></li>
 				</ul> 
 		</div>
 		</div>
 	</div>
 <script>
-function muestraResult(rubro){
-	$("#resultadosRubrosServicios").load("rubros-tiendas.php?rubro="+rubro+"");
-			return true;
-	}
+function muestraResult(rubro1,rubro2){
+	$("#resultadosRubrosServicios").empty();
+	var html = document.getElementById('resultadosRubrosServicios');
+	html.innerHTML += "<div class='titulo-rubro'><div class='volver-rubros-btn'><span><a href='rubros.html' rel='external'></a></span></div>"+rubro1+"</div><div id='wrapper' class='wrapper wrapper-extendido-rubros efecto-pagina'><div id='scroller'><ul id='thelist'></ul></div></div></div></div>";
+	var temporal1 = busquedaProducto(tiendas,rubro1);
+	if (typeof(rubro2) != 'undefined') { var temporal2 = busquedaProducto(tiendas,rubro2); }
+	var temporal3 = checkRubro(tiendas,rubro1);
+	if (typeof(rubro2) != 'undefined') { var temporal4 = checkRubro(tiendas,rubro2); }
+	htmlListaTiendas(temporal1,thelist);
+	if (typeof(rubro2) != 'undefined') { htmlListaTiendas(temporal2,thelist); }
+	htmlListaTiendas(temporal3[1],thelist);
+	if (typeof(rubro2) != 'undefined') { htmlListaTiendas(temporal4[1],thelist); }
+	var myScroll = new iScroll('wrapper');
+	}	
 </script>    
 </div><!-- /contenedor-busqueda -->
 
@@ -78,6 +90,5 @@ function muestraResult(rubro){
 
 </div><!-- /content -->
 </div><!-- /page -->
-
 </body>
 </html>

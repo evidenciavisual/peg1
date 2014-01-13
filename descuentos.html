@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	    <meta charset="UTF-8" />
+		<title>Mall Plaza</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="src/js/tiendas.js"></script>
+	</head>
+	<body> 
+		<div data-role="page" id="descuentos" class="mall-inicio-bg">
+			  	<script type="text/javascript">
+				$('#descuentos').bind('pageshow', function(event, ui){
+					var myScroll = new iScroll('wrapper');
+					/*---- ESTADISTICAS POR PAGINA------*/
+					var ur = window.location.href;
+					ur=ur.split("/");
+					ur=ur[4].split(".");
+					ur=ur[0];
+					$.get("addEstadistica.php", { nomPag: ur } );
+					/*---- ESTADISTICAS POR PAGINA------*/					
+				});	
+			</script>
+			<div data-role="content">
+			    <div class="titulos">
+				    <div class="volver-btn">
+				    	<span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span>
+				    </div>
+				    <div class="titulo-txt"><h1>Descuentos</h1></div>
+			    </div>
+
+		    	<div class="bg-paginas-carrusel">
+					<div id="wrapper" style="background: none; height: 1100px;">
+						<div id="scroller" style="padding:0; margin: 0;">
+							<ul id="thelist">
+								<script>
+					function loadXMLDoc(dname) {
+				if (window.XMLHttpRequest) {
+					xhttp=new XMLHttpRequest();
+				} else {
+					xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xhttp.open("GET",dname,false);
+				xhttp.send();
+				return xhttp.responseXML;
+			}
+		var xmlDoc;
+		var descuentosXml;
+		var descuentosJson = [];
+		var html = document.getElementById('thelist');
+				xmlDoc = loadXMLDoc("src/xml/descuentos.xml");
+				descuentosXml = Array.prototype.slice.call(xmlDoc.getElementsByTagName("descuento"));
+				for (i=0;i<descuentosXml.length;i++)
+					{
+				if (typeof(descuentosXml[i]) != 'undefined') {				
+				if (typeof(descuentosXml[i].getElementsByTagName("tienda")[0]) != 'undefined') { var tienda = descuentosXml[i].getElementsByTagName("tienda")[0].childNodes[0].nodeValue; }
+				if (typeof(descuentosXml[i].getElementsByTagName("fecha_inicio")[0]) != 'undefined') { var finicio = descuentosXml[i].getElementsByTagName("fecha_inicio")[0].childNodes[0].nodeValue; }
+				if (typeof(descuentosXml[i].getElementsByTagName("fecha_termino")[0]) != 'undefined') { var ftermino = descuentosXml[i].getElementsByTagName("fecha_termino")[0].childNodes[0].nodeValue; }
+				if (typeof(descuentosXml[i].getElementsByTagName("imagen")[0]) != 'undefined') { var imagen = descuentosXml[i].getElementsByTagName("imagen")[0].childNodes[0].nodeValue; }
+				imagen = encodeURI(imagen);
+				descuentosJson.push({
+						tienda: tienda,
+						finicio: finicio,
+						ftermino: ftermino,
+						imagen: imagen
+							});
+					}
+					}
+				for (k=0;k<descuentosJson.length;k++) {
+				var comollegar = buscarTiendaPorNombre(tiendas,descuentosJson[k].tienda);
+				var stringFuncion = "cargaPagina(" + comollegar[0].nodo + "," + comollegar[0].nodo + "," + comollegar[0].piso + ",\"" + comollegar[0].nombre + "\",\"" + comollegar[0].logo + "\")";
+				if ((comollegar[0].nodo != 0) && (k % 2 == 0)) {
+				html.innerHTML  += "<li class='lista-eventos' style='margin: 5px 0 5px 5px !important;'><div id='comoLlegarTienda'><a class='fancybox.iframe' onclick='"+stringFuncion+"');'>¿Cómo Llegar?</a></div><div id='imgTiendaDescuento'><img src='"+comollegar[0].logo+"' width='120' height='100'/></div><div id='tituloDescuento' style='line-height: 60px;'>"+descuentosJson[k].tienda+"</div><div id='fotoDescuento'><img src='"+descuentosJson[k].imagen+"' /></div><div id='vigenciaDescuento' style='float: left; margin-left:25px;'>Vigencia:"+descuentosJson[k].finicio+" hasta "+descuentosJson[k].ftermino+" o hasta agotar stock</div></li>";
+				}
+		}				
+		</script>
+							</ul>
+						</div>
+					</div>
+				</div>
+					<!-- Fancybox 2.0.6  -->
+			    	<link rel="stylesheet" href="src/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+					<script type="text/javascript" src="src/js/fancybox/jquery.fancybox.pack.js"></script>
+					<script> 
+					function cargaPagina(ubicacion,idTienda,piso,nombre,logo)
+					{
+						$.fancybox({
+							type		: "iframe",
+							fitToView	: true,
+							width		: 900,
+							height		: 1100,
+							padding 	: 40,
+							autoSize	: false,
+							closeClick	: false,
+							openEffect	: 'fade',
+							closeEffect	: 'elastic',
+							openSpeed	: 'normal',
+							helpers 	: { overlay : {opacity: 0.5, css : {'background-color' : '#440007'} } },
+							href:"getCaminoMasCorto.php?inicio=263&meta="+ubicacion+"&idTienda="+idTienda+"&piso="+piso+"&nombre="+nombre+"&logo="+logo+""
+						});
+					}
+					</script>
+				<!-- </div> -->
+
+				<div class="volver-bottom">
+					<div class="volver-btn-bottom"><span><a href="inicio.html" data-transition="slide" data-direction="reverse"></a></span></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
